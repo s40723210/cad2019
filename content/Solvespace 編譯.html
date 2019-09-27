@@ -138,7 +138,7 @@ init_mathjax();
                             <li><a href="./../blog/index.html">blog</a></li>
                         </ul>
                       </li>
-                     <li><a href='About.html'>About</a><li><a href='Develop.html'>Develop</a><li><a href='測試.html'>測試</a></li>
+                     <li><a href='About.html'>About</a><li><a href='Develop.html'>Develop</a><li><a href='Solvespace 編譯.html'>Solvespace 編譯</a></li>
                       </ul>
                 </nav>
               </div>
@@ -149,8 +149,14 @@ init_mathjax();
           </div>
           
         </header>
-    <div id="tipue_search_content">Develop << <a href='Develop.html'>Previous</a> <br /><h1>測試</h1>
-<p></p><br />Develop << <a href='Develop.html'>Previous</a> </div>
+    <div id="tipue_search_content">Develop << <a href='Develop.html'>Previous</a> <br /><h1>Solvespace 編譯</h1>
+<p>1.將<span>Y:\portablegit\bin\sh.exe的sh.exe改成 &gt; sh_rename_for_solvespace.exe。</span></p>
+<p><span>2.到tmp下git clone --recurse-submodules https://github.com/solvespace/solvespace.git 。</span></p>
+<p><span>3.進入tmp下的solvespace\extlib\angle\CMakeLists.txt。</span></p>
+<p><span>4.將CMakeLists.txt中的第713 and 714行前面加上#。</span></p>
+<p><span>5.</span>cd solvespace/extlib/libpng &gt; <span>mkdir build &gt; cd build。</span></p>
+<p><span>6.cmake .. -G "MinGW Makefiles" -DCMAKE_BUILD_TYPE=Release &gt; mingw32-make。</span></p>
+<p><span>7.</span></p><br />Develop << <a href='Develop.html'>Previous</a> </div>
         
     <!-- footer -->
       <div class="container">
