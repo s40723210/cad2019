@@ -151,15 +151,19 @@ init_mathjax();
         </header>
     <div id="tipue_search_content">Develop << <a href='Develop.html'>Previous</a> <br /><h1>每週主題</h1>
 <h4 class="post-title entry-title" itemprop="name">建立個人cad2019倉儲</h4>
-<p><span>我的教學影片:</span><a href="https://youtu.be/ta6FqOT-EHQ">https://youtu.be/ta6FqOT-EH<br/></a><br/><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/ta6FqOT-EH" width="560"></iframe></p>
+<p><span>我的教學影片:</span><a href="https://youtu.be/ta6FqOT-EHQ">https://youtu.be/ta6FqOT-EH<br/></a><a href="https://youtu.be/ta6FqOT-EHQ"><br/><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/ta6FqOT-EHQ" width="560"></iframe><br/></a></p>
 <h4>Solvespace 編譯</h4>
-<p>1.將<span>Y:\portablegit\bin\sh.exe的sh.exe改成 &gt; sh_rename_for_solvespace.exe。</span></p>
-<p><span>2.到tmp下git clone --recurse-submodules https://github.com/solvespace/solvespace.git 。</span></p>
-<p><span>3.進入tmp下的solvespace\extlib\angle\CMakeLists.txt。</span></p>
-<p><span>4.將CMakeLists.txt中的第713 and 714行前面加上#。</span></p>
-<p><span>5.</span>cd solvespace/extlib/libpng &gt; <span>mkdir build &gt; cd build。</span></p>
-<p><span>6.cmake .. -G "MinGW Makefiles" -DCMAKE_BUILD_TYPE=Release &gt; mingw32-make。</span></p>
-<p><span>7.</span></p>
+<div><span></span></div>
+<div><span>1.將Y:\portablegit\bin\sh.exe的sh.exe改成 &gt; sh_rename_for_solvespace.exe。</span></div>
+<div><span><span>2.到tmp下git clone --recurse-submodules https://github.com/solvespace/solvespace.git 。</span></span></div>
+<div><span><span>3.進入tmp下的solvespace\extlib\angle\CMakeLists.txt。</span></span></div>
+<div><span><span>4.將CMakeLists.txt中的第713 and 714行前面加上#。</span></span></div>
+<div><span><span>5.</span>cd solvespace/extlib/libpng &gt; <span>mkdir build &gt; cd build。</span></span></div>
+<div><span><span>6.cmake .. -G "MinGW Makefiles" -DCMAKE_BUILD_TYPE=Release &gt; mingw32-make。</span></span></div>
+<div><span><span>7.</span>把libpng.dll.a 改名為 libpng_static.a 並放到Y:/msys64\mingw64\lib。</span></div>
+<div><span>8.在solvespace建立build資料夾，在cd build。</span></div>
+<div><span>9.cmake .. -G "MinGW Makefiles" -DCMAKE_BUILD_TYPE=Release &gt; mingw32-make。</span></div>
+<div><span>10.到bin內開啟solvespace程式，把需要的檔案從Y:/msys64\mingw64\bin拿。</span></div>
 <p><span>我的教學影片(有字幕):<a href="https://youtu.be/s5Onnb9CPSI">https://youtu.be/s5Onnb9CPSI<br/></a><br/></span><span><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/s5Onnb9CPSI" width="560"></iframe></span></p>
 <h4 class="post-title entry-title" itemprop="name">解決cmake .. -G的Erro</h4>
 <p><span>我的教學影片(有字幕):</span><span><a href="https://youtu.be/yS-NvOgfCRY">https://youtu.be/yS-NvOgfCRY</a><a href="https://youtu.be/yS-NvOgfCRY"><br/></a></span><br/><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/yS-NvOgfCRY" width="560"></iframe></p><br />Develop << <a href='Develop.html'>Previous</a> </div>
