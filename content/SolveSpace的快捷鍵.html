@@ -1,185 +1,163 @@
-<h1>About</h1>
-<p>個人倉儲網址:<a href="https://github.com/s40723210/cad2019">https://github.com/s40723210/cad2019</a></p>
-<p>個人blogger:<a href="https://40723210.blogspot.com/">https://40723210.blogspot.com/</a></p>
-<p>個人youtube:<a href="https://www.youtube.com/channel/UC8l7lxn3l0ENuxYDhLjgxRw">https://www.youtube.com/channel/UC8l7lxn3l0ENuxYDhLjgxRw</a></p>
-<p><strong>*我有導入無法將文字選取起來的javascript，並不是bug。</strong></p>
-<hr/>
-<p>此內容管理系統以 <a href="https://github.com/mdecourse/cmsimde">https://github.com/mdecourse/cmsimde</a> 作為 submodule 運作, 可以選定對應的版本運作, cmsimde 可以持續改版, 不會影響之前設為 submodule, 使用舊版 cmsimde 模組的內容管理相關運作.</p>
-<h4>利用 cmsimde 建立靜態網誌方法:</h4>
-<p>1. 在 github 建立倉儲, git clone 到近端</p>
-<p>2. 參考 <a href="https://github.com/mdecourse/newcms">https://github.com/mdecourse/newcms</a>, 加入除了 cmsimde 目錄外的所有內容</p>
-<p>以 git submodule add <a href="https://github.com/mdecourse/cmsimde">https://github.com/mdecourse/cmsimde</a> cmsimde</p>
-<p>建立 cmsimde 目錄, 並從 github 取下子模組內容.</p>
-<p>3.在近端維護時, 更換目錄到倉儲中的 cmsimde, 以 python wsgi.py 啟動近端網際伺服器.</p>
-<p>動態內容編輯完成後, 以 generate_pages 轉為靜態內容, 以 git add commit 及 push 將內容推到遠端.</p>
-<p>4. 之後若要以 git clone 取下包含 submodule 的所有內容, 執行:</p>
-<p>git clone --recurse-submodules <a href="https://github.com/mdecourse/newcms.git">https://github.com/mdecourse/newcms.git</a></p><h1>Develop</h1>
-<p><a href="https://github.com/mdecourse/cmsimde">https://github.com/mdecourse/cmsimde</a> 的開發, 可以在一個目錄中放入 cmsimde, 然後將 up_dir 中的內容放到與 cmsimde 目錄同位階的地方, 使用 command 進入 cmsimde 目錄, 執行 python wsgi.py, 就可以啟動, 以瀏覽器 https://localhost:9443 就可以連接, 以 admin 作為管理者密碼, 就可以登入維護內容.</p>
-<p>cmsimde 的開發採用 Leo Editor, 開啟 cmsimde 目錄中的 cmsimde.leo 就可以進行程式修改, 結束後, 若要保留網際內容, 只要將 cmsimde 外部的內容倒回 up_dir 目錄中即可後續對 cmsimde 遠端倉儲進行改版.</p>
-<p>init.py 位於  up_dir 目錄, 可以設定 site_title 與 uwsgi 等變數.</p>
-<h1>Key notes</h1>
-<p><a href="https://s40723210.github.io/cad2019/content/vi%20與%20vim%20的指令整理.html">vi 與 vim 的指令整理</a></p>
-<p><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)"><span class="left">SolveSpace的快捷鍵</span></span></p><h2>vi 與 vim 的指令整理</h2>
-<p><strong>編輯模式</strong></p>
-<table border="1">
-<tbody>
-<tr>
-<th>指令</th>
-<th>說明</th>
-</tr>
-<tr>
-<td>i</td>
-<td>在游標位置進入編輯模式</td>
-</tr>
-<tr>
-<td>I</td>
-<td>在游標行的第一個非空白字元進入編輯模式</td>
-</tr>
-<tr>
-<td>a</td>
-<td>在游標位置後進入編輯模式</td>
-</tr>
-<tr>
-<td>A</td>
-<td>在游標行的最後一個字元進入編輯模式</td>
-</tr>
-<tr>
-<td>o</td>
-<td>向下新增一行，並進入編輯模式</td>
-</tr>
-<tr>
-<td>O</td>
-<td>向上新增一行，並進入編輯模式</td>
-</tr>
-<tr>
-<td>cc</td>
-<td>刪除游標行，並進入編輯模式</td>
-</tr>
-<tr>
-<td><span>h 或 向左方向鍵</span></td>
-<td><span>游標向左移動一個字元</span></td>
-</tr>
-<tr>
-<td><span>j 或 向下方向鍵</span></td>
-<td><span>游標向下移動一個字元</span></td>
-</tr>
-<tr>
-<td><span>k 或 向上方向鍵</span></td>
-<td><span>游標向上移動一個字元</span></td>
-</tr>
-<tr>
-<td><span>l 或 向右方向鍵</span></td>
-<td><span>游標向右移動一個字元</span></td>
-</tr>
-<tr>
-<td>[ESC]</td>
-<td>取消指令或退出編輯模式</td>
-</tr>
-</tbody>
-</table>
-<p><strong>刪除</strong></p>
-<table border="1">
-<tbody>
-<tr>
-<th>指令</th>
-<th>說明</th>
-</tr>
-<tr>
-<td>dd</td>
-<td>刪除游標行</td>
-</tr>
-<tr>
-<td><em>行數</em><span> </span>→ dd</td>
-<td>刪除 n 行</td>
-</tr>
-<tr>
-<td>dG</td>
-<td>刪除游標行到最後一行</td>
-</tr>
-<tr>
-<td>d1G</td>
-<td>刪除游標行到第一行</td>
-</tr>
-<tr>
-<td>d$</td>
-<td>刪除游標處到最後一個字元</td>
-</tr>
-<tr>
-<td>d0</td>
-<td>刪除游標處到第一個字元</td>
-</tr>
-</tbody>
-</table>
-<p><strong>檔案功能</strong></p>
-<table border="1">
-<tbody>
-<tr>
-<th>指令</th>
-<th>說明</th>
-</tr>
-<tr>
-<td>:w</td>
-<td>存檔 (加 ! 表示強制存檔)</td>
-</tr>
-<tr>
-<td>:w<span> </span><em>檔案名稱</em></td>
-<td>另存新檔</td>
-</tr>
-<tr>
-<td>:q</td>
-<td>退出 vi (加 ! 表示不存檔強制退出)</td>
-</tr>
-<tr>
-<td>:wq</td>
-<td>存檔並退出 vi</td>
-</tr>
-<tr>
-<td>:<span id="x">x</span></td>
-<td>存檔並退出 vi</td>
-</tr>
-<tr>
-<td>:e<span> </span><em>檔案名稱</em></td>
-<td>編輯其它檔案</td>
-</tr>
-<tr>
-<td>:e!</td>
-<td>還原至檔案編修前的狀態</td>
-</tr>
-<tr>
-<td>:r<span> </span><em>檔案名稱</em></td>
-<td>讀入檔案內容，並加到游標行的後面</td>
-</tr>
-<tr>
-<td>:n</td>
-<td>切換到下一個開啟的檔案</td>
-</tr>
-<tr>
-<td>:N</td>
-<td>切換到上一個開啟的檔案</td>
-</tr>
-<tr>
-<td>:set nu</td>
-<td>顯示行號</td>
-</tr>
-<tr>
-<td>:set nonu</td>
-<td>取消行號顯示</td>
-</tr>
-<tr>
-<td>:files</td>
-<td>列出所有開啟的檔案</td>
-</tr>
-<tr>
-<td>:Ex</td>
-<td>開啟檔案瀏覽器</td>
-</tr>
-<tr>
-<td>:Ex<span> </span><em>路徑</em></td>
-<td>於指定路徑開啟檔案瀏覽器</td>
-</tr>
-</tbody>
-</table>
-<h2>SolveSpace的快捷鍵</h2>
+<!DOCTYPE html><html>
+        <head>
+        <title>s40723210</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700,900" rel="stylesheet">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/icomoon/style.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/magnific-popup.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/jquery-ui.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/owl.carousel.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/owl.theme.default.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/bootstrap-datepicker.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/flaticon/font/flaticon.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/aos.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/style.css">
+        <link rel="shortcut icon" href="./../cmsimde/static/favicons.png">
+        
+        <style type='text/css'>
+            .site-section {
+            background-color: #FFFF;
+            padding: 40px 40px;
+            }
+            body > div > div.dropdown.open {
+                display: block;
+            }
+        </style>
+    
+        <!-- <script src="./../cmsimde/static/jquery.js"></script> -->
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+        <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script>
+        <link rel="stylesheet" href="./../cmsimde/static/tipuesearch/css/normalize.min.css">
+        <script src="./../cmsimde/static/tipuesearch/tipuesearch_set.js"></script>
+        <script src="tipuesearch_content.js"></script>
+        <link rel="stylesheet" href="./../cmsimde/static/tipuesearch/css/tipuesearch.css">
+        <script src="./../cmsimde/static/tipuesearch/tipuesearch.js"></script>
+        <script type="text/javascript">
+             document.oncontextmenu = function(){
+                    return false;
+             }
+             document.onselectstart = function(){
+                    return false;
+             }
+        </script>
+        <script>
+            /* original tipuesearch
+            $(document).ready(function() {
+                 $('#tipue_search_input').tipuesearch();
+            });
+            */
+            // customed doSearch
+            function doSearch() {
+                $('#tipue_search_input').tipuesearch({
+                    newWindow: true, 
+                    minimumLength: 2,
+                    wholeWords: false, // for search 中文
+                });
+            }
+            $(document).ready(doSearch);
+        </script>
+        
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shCore.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushJScript.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushJava.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPython.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushSql.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushHaxe.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushXml.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPhp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushLua.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCpp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCss.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCSharp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushDart.js"></script>
+<link type="text/css" rel="stylesheet" href="./../cmsimde/static/syntaxhighlighter/css/shCoreDefault.css"/>
+<script type="text/javascript">SyntaxHighlighter.all();</script>
+
+<!-- for LaTeX equations 暫時不用
+<script src="https://scrum-3.github.io/web/math/MathJax.js?config=TeX-MML-AM_CHTML" type="text/javascript"></script>
+<script type="text/javascript">
+init_mathjax = function() {
+    if (window.MathJax) {
+        // MathJax loaded
+        MathJax.Hub.Config({
+            tex2jax: {
+                inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+                displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+            },
+            displayAlign: 'left', // Change this to 'center' to center equations.
+            "HTML-CSS": {
+                styles: {'.MathJax_Display': {"margin": 0}}
+            }
+        });
+        MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
+    }
+}
+init_mathjax();
+</script>
+-->
+<!-- 暫時不用
+<script src="./../cmsimde/static/fengari-web.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/Cango-13v08-min.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/CangoAxes-4v01-min.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/gearUtils-05.js"></script>
+-->
+<!-- for Brython 暫時不用
+<script src="https://scrum-3.github.io/web/brython/brython.js"></script>
+<script src="https://scrum-3.github.io/web/brython/brython_stdlib.js"></script>
+-->
+
+</head>
+<body>
+<div class='container'><nav>
+        
+    <div class="site-wrap">
+
+    <div class="site-mobile-menu">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div>
+    
+            <header class="site-navbar py-4 bg-white" role="banner">
+              <div class="container-fluid">
+                <div class="row align-items-center">
+                <h1>s40723210 cad2019</h1>
+                <div class="pl-4">
+                    <form>
+                    <input type="text" placeholder="Search" name="q" id="tipue_search_input" pattern=".{2,}" title="At least 2 characters" required>
+                    </form>
+                </div>
+                  <!-- <div class="col-11 col-xl-2">
+                    <h1 class="mb-0 site-logo"><a href="index.html" class="text-black h2 mb-0">s40723210 cad2019</a></h1> 
+                  </div>
+                  -->
+                  <div class="col-12 col-md-10 d-none d-xl-block">
+                    <nav class="site-navigation position-relative text-right" role="navigation">
+    <ul class='site-menu js-clone-nav mr-auto d-none d-lg-block'>
+                        <li class="active has-children"><a href="index.html">Home</a>
+                        <ul class="dropdown">
+                            <li><a href="sitemap.html">Site Map</a></li>
+                            <li><a href="./../reveal/index.html">reveal</a></li>
+                            <li><a href="./../blog/index.html">blog</a></li>
+                        </ul>
+                      </li>
+                     <li><a href='About.html'>About</a><li><a href='Develop.html'>Develop</a><li class='has-children'><a href='Key notes.html'>Key notes</a><ul class='dropdown'><li><a href='vi 與 vim 的指令整理.html'>vi 與 vim 的指令整理</a><li><a href='SolveSpace的快捷鍵.html'>SolveSpace的快捷鍵</a></li></ul><li><a href='Video device.html'>Video device</a><li><a href='Weekly course.html'>Weekly course</a></li>
+                      </ul>
+                </nav>
+              </div>
+              <div class="d-inline-block d-xl-none ml-md-0 mr-auto py-3" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle text-black"><span class="icon-menu h3"></span></a></div>
+              </div>
+
+            </div>
+          </div>
+          
+        </header>
+    <div id="tipue_search_content">vi 與 vim 的指令整理 << <a href='vi 與 vim 的指令整理.html'>Previous</a> <a href='Video device.html'>Next</a> >> Video device<br /><h1>SolveSpace的快捷鍵</h1>
 <table cellspacing="0" class="category main">
 <tbody>
 <tr>
@@ -199,7 +177,7 @@
 </tr>
 </tbody>
 </table>
-<p class="goto_top"><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)"><span class="left"> </span></span></p>
+<p></p>
 <table cellspacing="0" class="category main">
 <tbody>
 <tr>
@@ -259,7 +237,7 @@
 </tr>
 </tbody>
 </table>
-<p class="goto_top"><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)"><span class="left"> </span></span></p>
+<p></p>
 <table cellspacing="0" class="category main">
 <tbody>
 <tr>
@@ -307,7 +285,7 @@
 </tr>
 </tbody>
 </table>
-<p class="goto_top"></p>
+<p></p>
 <table cellspacing="0" class="category main">
 <tbody>
 <tr>
@@ -430,36 +408,46 @@
 <td>註解</td>
 </tr>
 </tbody>
-</table><h1>Video device</h1>
-<p>我是使用ShareX<span>如圖(一)</span>來進行拍攝影片的如圖(一)，拍攝完成後再使用aegisub<span>如圖(二)來進行字幕的撰寫，最後再將字幕與影片融合，用arctime如圖(三)來進行融合與匯出影片的。</span></p>
-<p><img alt="" height="215" src="/images/header.jpg" width="460"/></p>
-<p>                                                      圖(一)</p>
-<p><img alt="" height="225" src="/images/images.jpg" width="225"/></p>
-<p>                          圖(二)</p>
-<p></p>
-<p><img alt="" height="225" src="/images/images.png" width="225"/></p>
-<p>                      圖(三)</p>
-<h1>Weekly course</h1>
-<h4 class="post-title entry-title" itemprop="name">建立個人cad2019倉儲</h4>
-<p><span>1.下載<a href="https://drive.google.com/file/d/1fxMdqdCoCL__O1IpZ-Sv-A_4-c77Wx4E/view?usp=sharing">2019Fall可攜套件.7z</a>，完成後開啟start。</span><span><br/></span><span></span><span><span>2.先登入自己的github帳號，</span><span>創建一個新的倉儲cad2019。</span></span><span><span><br/></span><span>3.進入要存放該資料的資料夾tmp。</span></span><span><span><br/></span></span><span></span><span><span>4.git clone </span><span>https://github.com/s40723210/cad2019 。</span><span><br/></span><span>5.</span><span>git submodule add https://github.com/mdecourse/cmsimde.git。</span></span><span><span><br/></span></span><span></span><span><span>6.再進入cmsimde，輸入python -m pip install flask_cors。</span></span><span><span><br/></span></span><span></span><span><span>7.完成後，python wsgi.py 開始編輯倉儲。</span></span><span><span><br/></span></span><span></span><span><span>8.login密碼為admin，gitconfig要有帳號密碼。</span></span><span><span><br/></span></span><span><span>9.處理完，git status &gt; git add . &gt; git commit -m "標題" &gt; git push。</span></span><span><span><br/></span></span><span><span>10.開啟github倉儲設定，點選要推送的branch即可。</span></span></p>
-<p><span>我的教學影片(有字幕):<a href="https://youtu.be/jBFzju1F43s">https://youtu.be/jBFzju1F43s<br/><br/><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/jBFzju1F43s" width="560"></iframe></a></span><a href="https://youtu.be/ta6FqOT-EHQ"><br/></a></p>
-<hr/>
-<h4>Solvespace 編譯</h4>
-<div><span></span></div>
-<div>
-<div><span>1.將Y:\portablegit\bin\sh.exe的sh.exe改成 &gt; sh_rename_for_solvespace.exe。</span></div>
-<div><span><span>2.到tmp下git clone --recurse-submodules https://github.com/solvespace/solvespace.git 。</span></span></div>
-<div><span><span>3.進入tmp下的solvespace\extlib\angle\CMakeLists.txt。</span></span></div>
-<div><span><span>4.將CMakeLists.txt中的第713 and 714行前面加上#。</span></span></div>
-<div><span><span>5.</span>cd solvespace/extlib/libpng &gt; <span>mkdir build &gt; cd build。</span></span></div>
-<div><span><span>6.cmake .. -G "MinGW Makefiles" -DCMAKE_BUILD_TYPE=Release &gt; mingw32-make。</span></span></div>
-<div><span><span>7.</span>把libpng.dll.a 改名為 libpng_static.a 並放到Y:/msys64\mingw64\lib。</span></div>
-<div><span>8.在solvespace建立build資料夾，在cd build。</span></div>
-<div><span>9.cmake .. -G "MinGW Makefiles" -DCMAKE_BUILD_TYPE=Release &gt; mingw32-make。</span></div>
-<div><span>10.到bin內開啟solvespace程式，把需要的檔案從Y:/msys64\mingw64\bin拿。</span></div>
-</div>
-<p><span>我的教學影片(有字幕):<a href="https://youtu.be/s5Onnb9CPSI">https://youtu.be/s5Onnb9CPSI<br/></a><br/></span><span><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/s5Onnb9CPSI" width="560"></iframe></span></p>
-<hr/>
-<h4 class="post-title entry-title" itemprop="name">解決cmake .. -G的Erro</h4>
-<p><span>在用cmake .. -G "MinGW Makefiles" -DCMAKE_BUILD_TYPE=Release執行時，碰到了</span><span>Y:/msys64/mingw64/bin/gcc.exe -- broken，無法執行的時候，是因為在路徑上有中文字，才讓程式出現錯誤的，以下是我的如何處理的影片。</span></p>
-<p><span>我的教學影片(有字幕):</span><span><a href="https://youtu.be/yS-NvOgfCRY">https://youtu.be/yS-NvOgfCRY</a><a href="https://youtu.be/yS-NvOgfCRY"><br/></a></span><br/><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/yS-NvOgfCRY" width="560"></iframe></p>
+</table><br />vi 與 vim 的指令整理 << <a href='vi 與 vim 的指令整理.html'>Previous</a> <a href='Video device.html'>Next</a> >> Video device</div>
+        
+    <!-- footer -->
+      <div class="container">
+        <div class="row pt-3 mx-auto">
+            <p>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            </p>
+        </div>
+      </div>
+    <!-- for footer -->
+    
+        </div> <!-- for site wrap -->
+            <!-- <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script> -->
+            <script src="../cmsimde/static/chimper/js/jquery-migrate-3.0.1.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery-ui.js"></script>
+            <script src="../cmsimde/static/chimper/js/popper.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/owl.carousel.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.stellar.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.countdown.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.magnific-popup.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap-datepicker.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/aos.js"></script>
+            <!--
+            <script src="../cmsimde/static/chimper/js/typed.js"></script>
+                    <script>
+                    var typed = new Typed('.typed-words', {
+                    strings: ["Web Apps"," WordPress"," Mobile Apps"],
+                    typeSpeed: 80,
+                    backSpeed: 80,
+                    backDelay: 4000,
+                    startDelay: 1000,
+                    loop: true,
+                    showCursor: true
+                    });
+                    </script>
+            -->
+            <script src="../cmsimde/static/chimper/js/main.js"></script>
+        </body></html>
+        
