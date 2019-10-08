@@ -13,13 +13,15 @@
 <p>3.在近端維護時, 更換目錄到倉儲中的 cmsimde, 以 python wsgi.py 啟動近端網際伺服器.</p>
 <p>動態內容編輯完成後, 以 generate_pages 轉為靜態內容, 以 git add commit 及 push 將內容推到遠端.</p>
 <p>4. 之後若要以 git clone 取下包含 submodule 的所有內容, 執行:</p>
-<p>git clone --recurse-submodules <a href="https://github.com/mdecourse/newcms.git">https://github.com/mdecourse/newcms.git</a></p><h1>Develop</h1>
+<p>git clone --recurse-submodules <a href="https://github.com/mdecourse/newcms.git">https://github.com/mdecourse/newcms.git</a></p>
+<h1>Develop</h1>
 <p><a href="https://github.com/mdecourse/cmsimde">https://github.com/mdecourse/cmsimde</a> 的開發, 可以在一個目錄中放入 cmsimde, 然後將 up_dir 中的內容放到與 cmsimde 目錄同位階的地方, 使用 command 進入 cmsimde 目錄, 執行 python wsgi.py, 就可以啟動, 以瀏覽器 https://localhost:9443 就可以連接, 以 admin 作為管理者密碼, 就可以登入維護內容.</p>
 <p>cmsimde 的開發採用 Leo Editor, 開啟 cmsimde 目錄中的 cmsimde.leo 就可以進行程式修改, 結束後, 若要保留網際內容, 只要將 cmsimde 外部的內容倒回 up_dir 目錄中即可後續對 cmsimde 遠端倉儲進行改版.</p>
 <p>init.py 位於  up_dir 目錄, 可以設定 site_title 與 uwsgi 等變數.</p>
 <h1>Key notes</h1>
 <p><a href="https://s40723210.github.io/cad2019/content/vi%20與%20vim%20的指令整理.html">vi 與 vim 的指令整理</a></p>
-<p><a href="https://s40723210.github.io/cad2019/content/SolveSpace%E7%9A%84%E5%BF%AB%E6%8D%B7%E9%8D%B5.html">SolveSpace的快捷鍵</a></p><h2>vi 與 vim 的指令整理</h2>
+<p><a href="https://s40723210.github.io/cad2019/content/SolveSpace%E7%9A%84%E5%BF%AB%E6%8D%B7%E9%8D%B5.html">SolveSpace的快捷鍵</a></p>
+<h2>vi 與 vim 的指令整理</h2>
 <p><strong>編輯模式</strong></p>
 <table border="1">
 <tbody>
@@ -180,257 +182,294 @@
 </tbody>
 </table>
 <h2>SolveSpace的快捷鍵</h2>
-<table cellspacing="0" class="category main">
+<table cellspacing="0" class="category main" style="width: 530px;">
 <tbody>
 <tr>
-<th colspan="2"><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)">1.文件菜單</span></th>
+<th colspan="2" style="text-align: left; width: 528px;"><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)">1.文件菜單</span></th>
 </tr>
 <tr>
-<td class="shortcut"><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)"><span class="kbd">Ctrl</span><span> </span>+<span> </span><span class="kbd">N</span></span></td>
-<td><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)">新</span></td>
+<td class="shortcut" style="width: 119.091px;"><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)"><span class="kbd">Ctrl</span><span> </span>+<span> </span><span class="kbd">N</span></span></td>
+<td style="width: 408.909px;"><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)">新建</span></td>
 </tr>
 <tr>
-<td class="shortcut"><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)"><span class="kbd">Ctrl</span><span> </span>+<span> </span><span class="kbd">O</span></span></td>
-<td><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)">打開</span></td>
+<td class="shortcut" style="width: 119.091px;"><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)"><span class="kbd">Ctrl</span><span> </span>+<span> </span><span class="kbd">O</span></span></td>
+<td style="width: 408.909px;"><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)">打開</span></td>
 </tr>
 <tr>
-<td class="shortcut"><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)"><span class="kbd">Ctrl</span><span> </span>+<span> </span><span class="kbd">S</span></span></td>
-<td>儲存</td>
+<td class="shortcut" style="width: 119.091px;"><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)"><span class="kbd">Ctrl</span><span> </span>+<span> </span><span class="kbd">S</span></span></td>
+<td style="width: 408.909px;">儲存</td>
 </tr>
 </tbody>
 </table>
 <p></p>
-<table cellspacing="0" class="category main">
+<table cellspacing="0" class="category main" style="width: 532px;">
 <tbody>
 <tr>
-<th colspan="2"><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)">2.編輯菜單</span></th>
+<th colspan="2" style="text-align: left; width: 530px;"><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)">2.編輯菜單</span></th>
 </tr>
 <tr>
-<td class="shortcut"><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)"><span class="kbd">Ctrl</span><span> </span>+<span> </span><span class="kbd">Z</span></span></td>
-<td><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)">撤消</span></td>
+<td class="shortcut" style="width: 122.455px;"><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)"><span class="kbd">Ctrl</span><span> </span>+<span> </span><span class="kbd">Z</span></span></td>
+<td style="width: 407.545px;"><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)">撤消</span></td>
 </tr>
 <tr>
-<td class="shortcut"><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)"><span class="kbd">Ctrl</span><span> </span>+<span> </span><span class="kbd">Y</span></span></td>
-<td><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)">重做</span></td>
+<td class="shortcut" style="width: 122.455px;"><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)"><span class="kbd">Ctrl</span><span> </span>+<span> </span><span class="kbd">Y</span></span></td>
+<td style="width: 407.545px;"><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)">重做</span></td>
 </tr>
 <tr>
-<td class="shortcut"><span>Space</span></td>
-<td><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)">全部重新生成</span></td>
+<td class="shortcut" style="width: 122.455px;"><span>Space</span></td>
+<td style="width: 407.545px;"><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)">全部重新生成</span></td>
 </tr>
 <tr>
-<td class="shortcut">.</td>
-<td><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)">將選擇對齊到網格</span></td>
+<td class="shortcut" style="width: 122.455px;">.</td>
+<td style="width: 407.545px;"><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)">將選擇對齊到網格</span></td>
 </tr>
 <tr>
-<td class="shortcut"><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)"><span class="kbd">9</span></span></td>
-<td><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)">旋轉導入90°</span></td>
+<td class="shortcut" style="width: 122.455px;"><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)"><span class="kbd">9</span></span></td>
+<td style="width: 407.545px;"><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)">旋轉導入90°</span></td>
 </tr>
 <tr>
-<td class="shortcut"><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)"><span class="kbd">Ctrl</span><span> </span>+<span> </span><span class="kbd">X</span></span></td>
-<td>剪下</td>
+<td class="shortcut" style="width: 122.455px;"><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)"><span class="kbd">Ctrl</span><span> </span>+<span> </span><span class="kbd">X</span></span></td>
+<td style="width: 407.545px;">剪下</td>
 </tr>
 <tr>
-<td class="shortcut"><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)"><span class="kbd">Ctrl</span><span> </span>+<span> </span><span class="kbd">C</span></span></td>
-<td><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)">複製</span></td>
+<td class="shortcut" style="width: 122.455px;"><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)"><span class="kbd">Ctrl</span><span> </span>+<span> </span><span class="kbd">C</span></span></td>
+<td style="width: 407.545px;"><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)">複製</span></td>
 </tr>
 <tr>
-<td class="shortcut"><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)"><span class="kbd">Ctrl</span><span> </span>+<span> </span><span class="kbd">V</span></span></td>
-<td>貼上</td>
+<td class="shortcut" style="width: 122.455px;"><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)"><span class="kbd">Ctrl</span><span> </span>+<span> </span><span class="kbd">V</span></span></td>
+<td style="width: 407.545px;">貼上</td>
 </tr>
 <tr>
-<td class="shortcut"><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)"><span class="kbd">Ctrl</span><span> </span>+<span> </span><span class="kbd">T</span></span></td>
-<td><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)">粘貼變形</span></td>
+<td class="shortcut" style="width: 122.455px;"><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)"><span class="kbd">Ctrl</span><span> </span>+<span> </span><span class="kbd">T</span></span></td>
+<td style="width: 407.545px;"><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)">粘貼變形</span></td>
 </tr>
 <tr>
-<td class="shortcut">Del</td>
-<td><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)">刪除</span></td>
+<td class="shortcut" style="width: 122.455px;">Del</td>
+<td style="width: 407.545px;"><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)">刪除</span></td>
 </tr>
 <tr>
-<td class="shortcut"><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)"><span class="kbd">Ctrl</span><span> </span>+<span> </span><span class="kbd">E</span></span></td>
-<td><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)">選擇邊緣鏈</span></td>
+<td class="shortcut" style="width: 122.455px;"><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)"><span class="kbd">Ctrl</span><span> </span>+<span> </span><span class="kbd">E</span></span></td>
+<td style="width: 407.545px;"><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)">選擇邊緣鏈</span></td>
 </tr>
 <tr>
-<td class="shortcut"><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)"><span class="kbd">Ctrl</span><span> </span>+<span> </span><span class="kbd">A</span></span></td>
-<td><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)">全選</span></td>
+<td class="shortcut" style="width: 122.455px;"><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)"><span class="kbd">Ctrl</span><span> </span>+<span> </span><span class="kbd">A</span></span></td>
+<td style="width: 407.545px;"><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)">全選</span></td>
 </tr>
 <tr>
-<td class="shortcut">Esc</td>
-<td><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)">全部取消選擇</span></td>
+<td class="shortcut" style="width: 122.455px;">Esc</td>
+<td style="width: 407.545px;"><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)">全部取消選擇</span></td>
 </tr>
 </tbody>
 </table>
 <p></p>
-<table cellspacing="0" class="category main">
+<table cellspacing="0" class="category main" style="width: 532px;">
 <tbody>
 <tr>
-<th colspan="2"><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)">3.查看菜單</span></th>
+<th colspan="2" style="text-align: left; width: 530px;"><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)">3.查看菜單</span></th>
 </tr>
 <tr>
-<td class="shortcut"><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)"><span class="kbd">+</span></span></td>
-<td><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)">放大</span></td>
+<td class="shortcut" style="width: 114.727px;"><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)"><span class="kbd">+</span></span></td>
+<td style="width: 415.273px;"><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)">放大</span></td>
 </tr>
 <tr>
-<td class="shortcut"><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)"><span class="kbd">--</span></span></td>
-<td><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)">縮小</span></td>
+<td class="shortcut" style="width: 114.727px;"><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)"><span class="kbd">--</span></span></td>
+<td style="width: 415.273px;"><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)">縮小</span></td>
 </tr>
 <tr>
-<td class="shortcut"><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)"><span class="kbd">F</span></span></td>
-<td><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)">縮放至<span class="kbd">適合</span></span></td>
+<td class="shortcut" style="width: 114.727px;"><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)"><span class="kbd">F</span></span></td>
+<td style="width: 415.273px;"><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)">縮放至<span class="kbd">適合</span></span></td>
 </tr>
 <tr>
-<td class="shortcut">W</td>
-<td><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)">將視圖與工作平面對齊</span></td>
+<td class="shortcut" style="width: 114.727px;">W</td>
+<td style="width: 415.273px;"><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)">將視圖與工作平面對齊</span></td>
 </tr>
 <tr>
-<td class="shortcut"><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)"><span class="kbd">F2</span></span></td>
-<td><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)">最近的正交視圖</span></td>
+<td class="shortcut" style="width: 114.727px;"><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)"><span class="kbd">F2</span></span></td>
+<td style="width: 415.273px;"><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)">最近的正交視圖</span></td>
 </tr>
 <tr>
-<td class="shortcut"><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)"><span class="kbd">F3</span></span></td>
-<td><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)">最近的等軸測圖</span></td>
+<td class="shortcut" style="width: 114.727px;"><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)"><span class="kbd">F3</span></span></td>
+<td style="width: 415.273px;"><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)">最近的等軸測圖</span></td>
 </tr>
 <tr>
-<td class="shortcut"><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)"><span class="kbd">F4</span></span></td>
-<td><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)">視點中心</span></td>
+<td class="shortcut" style="width: 114.727px;"><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)"><span class="kbd">F4</span></span></td>
+<td style="width: 415.273px;"><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)">視點中心</span></td>
 </tr>
 <tr>
-<td class="shortcut"><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)"><span class="kbd">&gt;</span></span></td>
-<td><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)">顯示捕捉網格</span></td>
+<td class="shortcut" style="width: 114.727px;"><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)"><span class="kbd">&gt;</span></span></td>
+<td style="width: 415.273px;"><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)">顯示捕捉網格</span></td>
 </tr>
 <tr>
-<td class="shortcut"><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)"><span class="kbd">`</span></span></td>
-<td><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)">使用透視投影</span></td>
+<td class="shortcut" style="width: 114.727px;"><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)"><span class="kbd">`</span></span></td>
+<td style="width: 415.273px;"><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)">使用透視投影</span></td>
 </tr>
 <tr>
-<td class="shortcut">Tad</td>
-<td><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)">顯示文字視窗</span></td>
+<td class="shortcut" style="width: 114.727px;">Tad</td>
+<td style="width: 415.273px;"><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)">顯示文字視窗</span></td>
 </tr>
 </tbody>
 </table>
 <p></p>
-<table cellspacing="0" class="category main">
+<table cellspacing="0" class="category main" style="width: 531px;">
 <tbody>
 <tr>
-<th colspan="2"><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)">5.素描</span></th>
+<th colspan="2" style="text-align: left; width: 529px;"><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)">5.素描</span></th>
 </tr>
 <tr>
-<td class="shortcut"><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)"><span class="kbd">2</span></span></td>
-<td><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)">在工作平面</span></td>
+<td class="shortcut" style="width: 115.545px;"><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)"><span class="kbd">2</span></span></td>
+<td style="width: 413.455px;"><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)">在工作平面</span></td>
 </tr>
 <tr>
-<td class="shortcut"><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)"><span class="kbd">3</span></span></td>
-<td><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)">3D的任何地方</span></td>
+<td class="shortcut" style="width: 115.545px;"><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)"><span class="kbd">3</span></span></td>
+<td style="width: 413.455px;"><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)">3D的任何地方</span></td>
 </tr>
 <tr>
-<td class="shortcut"><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)"><span class="kbd">P</span></span></td>
-<td><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)">基準點</span></td>
+<td class="shortcut" style="width: 115.545px;"><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)"><span class="kbd">P</span></span></td>
+<td style="width: 413.455px;"><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)">基準點</span></td>
 </tr>
 <tr>
-<td class="shortcut">S</td>
-<td><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)">線段</span></td>
+<td class="shortcut" style="width: 115.545px;">S</td>
+<td style="width: 413.455px;"><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)">線段</span></td>
 </tr>
 <tr>
-<td class="shortcut"><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)"><span class="kbd">R</span></span></td>
-<td><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)">矩形</span></td>
+<td class="shortcut" style="width: 115.545px;"><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)"><span class="kbd">R</span></span></td>
+<td style="width: 413.455px;"><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)">矩形</span></td>
 </tr>
 <tr>
-<td class="shortcut"><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)"><span class="kbd">C</span></span></td>
-<td><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)">圓</span></td>
+<td class="shortcut" style="width: 115.545px;"><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)"><span class="kbd">C</span></span></td>
+<td style="width: 413.455px;"><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)">圓</span></td>
 </tr>
 <tr>
-<td class="shortcut">A</td>
-<td><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)">圓弧</span></td>
+<td class="shortcut" style="width: 115.545px;">A</td>
+<td style="width: 413.455px;"><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)">圓弧</span></td>
 </tr>
 <tr>
-<td class="shortcut">B</td>
-<td><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)">三次曲線樣條</span></td>
+<td class="shortcut" style="width: 115.545px;">B</td>
+<td style="width: 413.455px;"><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)">三次曲線樣條</span></td>
 </tr>
 <tr>
-<td class="shortcut">T</td>
-<td>真型字體文本</td>
+<td class="shortcut" style="width: 115.545px;">T</td>
+<td style="width: 413.455px;">真型字體文本</td>
 </tr>
 <tr>
-<td class="shortcut"><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)"><span class="kbd">G</span></span></td>
-<td><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)">切換構造</span></td>
+<td class="shortcut" style="width: 115.545px;"><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)"><span class="kbd">G</span></span></td>
+<td style="width: 413.455px;"><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)">切換構造</span></td>
 </tr>
 <tr>
-<td class="shortcut"><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)"><span class="kbd">Shift</span><span> </span>+<span> </span><span class="kbd">A</span></span></td>
-<td><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)">點切線弧</span></td>
+<td class="shortcut" style="width: 115.545px;"><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)"><span class="kbd">Shift</span><span> </span>+<span> </span><span class="kbd">A</span></span></td>
+<td style="width: 413.455px;"><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)">點切線弧</span></td>
 </tr>
 <tr>
-<td class="shortcut">I</td>
-<td><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)">在相交處分割曲線</span></td>
+<td class="shortcut" style="width: 115.545px;">I</td>
+<td style="width: 413.455px;"><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)">在相交處分割曲線</span></td>
 </tr>
 </tbody>
 </table>
 <p></p>
-<table cellspacing="0" class="category main">
+<table cellspacing="0" class="category main" style="width: 532px;">
 <tbody>
 <tr>
-<th colspan="2"><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)">6.約束</span></th>
+<th colspan="2" style="text-align: left; width: 530px;"><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)">6.約束</span></th>
 </tr>
 <tr>
-<td class="shortcut">D</td>
-<td><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)">距離/直徑</span></td>
+<td class="shortcut" style="width: 105.818px;">D</td>
+<td style="width: 424.182px;"><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)">距離/直徑</span></td>
 </tr>
 <tr>
-<td class="shortcut">N</td>
-<td><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)">角度</span></td>
+<td class="shortcut" style="width: 105.818px;">N</td>
+<td style="width: 424.182px;"><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)">角度</span></td>
 </tr>
 <tr>
-<td class="shortcut">U</td>
-<td><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)">其他輔助角</span></td>
+<td class="shortcut" style="width: 105.818px;">U</td>
+<td style="width: 424.182px;"><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)">其他輔助角</span></td>
 </tr>
 <tr>
-<td class="shortcut">E</td>
-<td><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)">切換參考昏暗</span></td>
+<td class="shortcut" style="width: 105.818px;">E</td>
+<td style="width: 424.182px;"><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)">切換參考昏暗</span></td>
 </tr>
 <tr>
-<td class="shortcut"><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)"><span class="kbd">H</span></span></td>
-<td>設定水平</td>
+<td class="shortcut" style="width: 105.818px;"><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)"><span class="kbd">H</span></span></td>
+<td style="width: 424.182px;">設定水平</td>
 </tr>
 <tr>
-<td class="shortcut"><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)"><span class="kbd">V</span></span></td>
-<td><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)">設定垂直</span></td>
+<td class="shortcut" style="width: 105.818px;"><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)"><span class="kbd">V</span></span></td>
+<td style="width: 424.182px;"><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)">設定垂直</span></td>
 </tr>
 <tr>
-<td class="shortcut">O</td>
-<td><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)">在點/曲線/平面上</span></td>
+<td class="shortcut" style="width: 105.818px;">O</td>
+<td style="width: 424.182px;"><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)">在點/曲線/平面上</span></td>
 </tr>
 <tr>
-<td class="shortcut">Q</td>
-<td><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)">等長/半徑/角度</span></td>
+<td class="shortcut" style="width: 105.818px;">Q</td>
+<td style="width: 424.182px;"><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)">等長/半徑/角度</span></td>
 </tr>
 <tr>
-<td class="shortcut">Z</td>
-<td><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)">長度比</span></td>
+<td class="shortcut" style="width: 105.818px;">Z</td>
+<td style="width: 424.182px;"><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)">長度比</span></td>
 </tr>
 <tr>
-<td class="shortcut">M</td>
-<td><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)">在中點</span></td>
+<td class="shortcut" style="width: 105.818px;">M</td>
+<td style="width: 424.182px;"><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)">在中點</span></td>
 </tr>
 <tr>
-<td class="shortcut">Y</td>
-<td><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)">對稱的</span></td>
+<td class="shortcut" style="width: 105.818px;">Y</td>
+<td style="width: 424.182px;"><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)">對稱的</span></td>
 </tr>
 <tr>
-<td class="shortcut">L</td>
-<td><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)">平行/切線</span></td>
+<td class="shortcut" style="width: 105.818px;">L</td>
+<td style="width: 424.182px;"><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)">平行/切線</span></td>
 </tr>
 <tr>
-<td class="shortcut"><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)"><span class="kbd">X</span></span></td>
-<td><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)">相同方向</span></td>
+<td class="shortcut" style="width: 105.818px;"><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)"><span class="kbd">X</span></span></td>
+<td style="width: 424.182px;"><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)">相同方向</span></td>
 </tr>
 <tr>
-<td class="shortcut"><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)"><span class="kbd">]</span></span></td>
-<td><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)">拖延的鎖定點</span></td>
+<td class="shortcut" style="width: 105.818px;"><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)"><span class="kbd">]</span></span></td>
+<td style="width: 424.182px;"><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)">拖延的鎖定點</span></td>
 </tr>
 <tr>
-<td class="shortcut"><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)"><span class="kbd">;</span></span></td>
-<td>註解</td>
+<td class="shortcut" style="width: 105.818px;"><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)"><span class="kbd">;</span></span></td>
+<td style="width: 424.182px;">註解</td>
 </tr>
 </tbody>
-</table><h1>Video device</h1>
+</table>
+<p></p>
+<table cellspacing="0" class="category main" style="width: 532px;">
+<tbody>
+<tr>
+<th colspan="2" style="text-align: left; width: 530px;"><span>4.形成</span></th>
+</tr>
+<tr>
+<td class="shortcut" style="width: 126px;"><span class="kbd"><span>Shift</span></span><span><span> </span>+<span> </span></span><span class="kbd"><span>3</span></span></td>
+<td style="width: 404px;"><span>3D素描</span></td>
+</tr>
+<tr>
+<td class="shortcut" style="width: 126px;"><span class="kbd"><span>Shift</span></span><span><span> </span>+<span> </span></span><span class="kbd"><span>W</span></span></td>
+<td style="width: 404px;">在新工作平面中素描</td>
+</tr>
+<tr>
+<td class="shortcut" style="width: 126px;"><span class="kbd"><span>Shift</span></span><span><span> </span>+<span> </span></span><span class="kbd"><span>T</span></span></td>
+<td style="width: 404px;">逐步<span>放置</span></td>
+</tr>
+<tr>
+<td class="shortcut" style="width: 126px;"><span class="kbd"><span>Shift</span></span><span><span> </span>+<span> </span></span><span class="kbd"><span>R</span></span></td>
+<td style="width: 404px;">步進旋轉</td>
+</tr>
+<tr>
+<td class="shortcut" style="width: 126px;"><span class="kbd"><span>Shift</span></span><span><span> </span>+<span> </span></span><span class="kbd"><span>X</span></span></td>
+<td style="width: 404px;">拉伸</td>
+</tr>
+<tr>
+<td class="shortcut" style="width: 126px;"><span class="kbd"><span>Shift</span></span><span><span> </span>+<span> </span></span><span class="kbd"><span>L</span></span></td>
+<td style="width: 404px;">旋轉拉伸</td>
+</tr>
+<tr>
+<td class="shortcut" style="width: 126px;"><span class="kbd"><span>Shift</span></span><span><span> </span>+<span> </span></span><span class="kbd"><span>I</span></span></td>
+<td style="width: 404px;"><span>導入/組裝</span></td>
+</tr>
+</tbody>
+</table>
+<h1>Video device</h1>
 <p>我是使用ShareX<span>如圖(一)</span>來進行拍攝影片的如圖(一)，拍攝完成後再使用aegisub<span>如圖(二)來進行字幕的撰寫，最後再將字幕與影片融合，用arctime如圖(三)來進行融合與匯出影片的。</span></p>
 <p><img alt="" height="215" src="/images/header.jpg" width="460"/></p>
 <p>                                                      圖(一)</p>
@@ -440,11 +479,11 @@
 <p><img alt="" height="225" src="/images/images.png" width="225"/></p>
 <p>                      圖(三)</p>
 <h1>Weekly course</h1>
-<h4 class="post-title entry-title" itemprop="name">建立個人cad2019倉儲</h4>
+<h4 class="post-title entry-title" itemprop="name"><strong>建立個人cad2019倉儲</strong></h4>
 <p><span>1.下載<a href="https://drive.google.com/file/d/1fxMdqdCoCL__O1IpZ-Sv-A_4-c77Wx4E/view?usp=sharing">2019Fall可攜套件.7z</a>，完成後開啟start。</span><span><br/></span><span></span><span><span>2.先登入自己的github帳號，</span><span>創建一個新的倉儲cad2019。</span></span><span><span><br/></span><span>3.進入要存放該資料的資料夾tmp。</span></span><span><span><br/></span></span><span></span><span><span>4.git clone </span><span>https://github.com/s40723210/cad2019 。</span><span><br/></span><span>5.</span><span>git submodule add https://github.com/mdecourse/cmsimde.git。</span></span><span><span><br/></span></span><span></span><span><span>6.再進入cmsimde，輸入python -m pip install flask_cors。</span></span><span><span><br/></span></span><span></span><span><span>7.完成後，python wsgi.py 開始編輯倉儲。</span></span><span><span><br/></span></span><span></span><span><span>8.login密碼為admin，gitconfig要有帳號密碼。</span></span><span><span><br/></span></span><span><span>9.處理完，git status &gt; git add . &gt; git commit -m "標題" &gt; git push。</span></span><span><span><br/></span></span><span><span>10.開啟github倉儲設定，點選要推送的branch即可。</span></span></p>
 <p><span>我的教學影片(有字幕):<a href="https://youtu.be/jBFzju1F43s">https://youtu.be/jBFzju1F43s<br/><br/><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/jBFzju1F43s" width="560"></iframe></a></span><a href="https://youtu.be/ta6FqOT-EHQ"><br/></a></p>
 <hr/>
-<h4>Solvespace 編譯</h4>
+<h4><strong>Solvespace 編譯</strong></h4>
 <div><span></span></div>
 <div>
 <div><span>1.將Y:\portablegit\bin\sh.exe的sh.exe改成 &gt; sh_rename_for_solvespace.exe。</span></div>
@@ -460,6 +499,11 @@
 </div>
 <p><span>我的教學影片(有字幕):<a href="https://youtu.be/s5Onnb9CPSI">https://youtu.be/s5Onnb9CPSI<br/></a><br/></span><span><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/s5Onnb9CPSI" width="560"></iframe></span></p>
 <hr/>
-<h4 class="post-title entry-title" itemprop="name">解決cmake .. -G的Erro</h4>
+<h4 class="post-title entry-title" itemprop="name"><strong>解決cmake .. -G的Erro</strong></h4>
 <p><span>在用cmake .. -G "MinGW Makefiles" -DCMAKE_BUILD_TYPE=Release執行時，碰到了</span><span>Y:/msys64/mingw64/bin/gcc.exe -- broken，無法執行的時候，是因為在路徑上有中文字，才讓程式出現錯誤的，以下是我的如何處理的影片。</span></p>
 <p><span>我的教學影片(有字幕):</span><span><a href="https://youtu.be/yS-NvOgfCRY">https://youtu.be/yS-NvOgfCRY</a><a href="https://youtu.be/yS-NvOgfCRY"><br/></a></span><br/><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/yS-NvOgfCRY" width="560"></iframe></p>
+<hr/>
+<h4><strong>Solvespace 操作</strong></h4>
+<p><span style="color: #0000ff;">成品圖:</span></p>
+<p><iframe height="300" src="/get_page/solvespace/untitled.html" width="500"></iframe><br/><br/><span>我的操作影片(有字幕):<a href="https://youtu.be/4ujff-3Hbkc">https://youtu.be/4ujff-3Hbkc</a><br/></span></p>
+<p><span><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/4ujff-3Hbkc" width="560"></iframe></span></p>
