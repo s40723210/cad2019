@@ -162,8 +162,25 @@ img.add_border {
           </div>
           
         </header>
-    <div id="tipue_search_content">Week6-9 << <a href='Week6-9.html'>Previous</a> <a href='Week15-18.html'>Next</a> >> Week15-18<br /><h1>Week10-14</h1>
-<br />Week6-9 << <a href='Week6-9.html'>Previous</a> <a href='Week15-18.html'>Next</a> >> Week15-18</div>
+    <div id="tipue_search_content">git基本指令 << <a href='git基本指令.html'>Previous</a> <a href='vi 與 vim 的指令整理.html'>Next</a> >> vi 與 vim 的指令整理<br /><h1>python基本語法</h1>
+<p>● ”#”符號後是註解（comment），可以在一列的開頭或中間加入<br/>● reserved word or built-in function (變數取名請避開！)<br/>○     and, exec, not, as, finally, or, assert, for, pass, except<br/>○     break, from, print, class, global, raise, continue, if, return<br/>○     def, import, try, del, in, while, elif, is, with, else, lambda, yield<br/>● 縮排視為不同的block (在IF判斷式或迴圈的段落中使用)<br/>○     縮排可以用tab或是數個空格(至少一個空格)。<br/>○     空格的數量不同，視為不同的block (bug很容易因為這一點而發生)<br/>● python的每個變數視為一個object。</p>
+<p><span><strong>Python variables</strong></span></p>
+<p>● 不需要事先宣告變數，直接用”=“ assign value（賦值）即可。<br/>○     x=3.14 → 實數變數<br/>● 變數類型（data type）根據被賦予的值決定（之後如果被assign不同類型的數<br/>值，該變數的類型就會直接改變）<br/>○     x=‘text’ → 字串變數<br/>● 確認變數的data type: type(x)<br/>● 變數名稱中的大小寫要完全一致（a、A會當作不同的變數）<br/>● python可以在同一個指令中對多個變數賦值<br/>○     x, y = 2, 1 → x = 2, y = 1<br/>● 若想要移除變數，使用del x y<br/>● 常見的data type: number, string, list, tuple, boolean</p>
+<p><span><strong>Simple input/output</strong></span></p>
+<p>● input(“…”) 在螢幕上顯示字串，並等待使用者輸入字串<br/>○     x = input (“input your name: “)  螢幕上會顯示訊息 input your name:，<br/>       使用者輸入的內容，會用字串類型存到x變數<br/>○    就算使用者輸入數字，仍然是以字串類型儲存（之後會介紹如何切割字串<br/>     （split），轉為數值）<br/>● print (...) 顯示在螢幕上<br/>○     e.g. print (“Hello World!!”)<br/>○     若要一次輸出多個變數至螢幕上，直接以逗號分開 e.g. print(x,y,z)<br/>○     也可以format output</p>
+<p><span><strong>Python variable types</strong></span></p>
+<p>● Number 數值<br/>○     int : a = 11<br/>○     float: a = 1.1e-18<br/>○     complex: a = 4. + 7j<br/>● String 字串 （ 用“ “ 或 ‘ ‘夾起）<br/>○     e.g. x = “Hello World!” or x = ‘Hello World!’<br/>○     取出字串的局部：x [0:3]<br/>■         注意：index 從 0 開始計算！<br/>■         [a:b] -- begin at index a and end before index b (e.g., x[0:3] -&gt; “Hel”)<br/>○     不可以對字串的局部做更改，e.g. x[0:3] =”Yo!” (這個是錯誤的語法)<br/>● Boolean 邏輯<br/>○     只有True, False兩種值，根據邏輯判斷（IF condition）的結果決定<br/>○     兩個boolean 變數做運算，會以True=1, False=0 做整數運算</p>
+<p><span><strong>Python variables: list and tuple</strong></span></p>
+<p>● list, tuple<br/>○     類似陣列的概念，但可以混雜儲存不同型態的資料，如下所示<br/>○     List： x = [ 'abcd', 786 , 2.23, 'john', 70.2]<br/>○     Tuple: y = ( 'abcd', 786 , 2.23, 'john', 70.2)<br/>○     assignment: list 使用 [], tuple 使用(), 每個元素都用”，”分開<br/>○     list 的大小及元素可以改變。tuple則不行 (類似常數陣列)<br/>○     sub-list 或是 sub-tuple語法類似取出字串局部：<br/>            x[0:2]  ['abcd', 786 ]<br/>            y[2:4]  (786, 2.23 )</p>
+<p><span><strong>Convert data type</strong></span></p>
+<p>有時候需要不同型態的資料轉換，例如將字串”10”轉成整數10<br/>下列為常用的built-in function<br/>● int (x)<br/>● float (x)<br/>● str (x)</p>
+<p><span><strong>Arithmetic Operators</strong></span></p>
+<p>● 加法 +<br/>○     string 相加：形成新的字串                              ● 次方 **<br/>■         x = “Hello”, y = “World”                                ● 取餘數 %<br/>■         c = x + y → c = “HelloWorld”                        ● 整除至最近整數 //<br/>● 減法 -                                                                      ○相除後取最接近的整數(整實數)，<br/>● 乘法 *                                                                      結果的類型取決於兩個變數的類型：<br/>○     string 乘一個數字(int)：字串重複幾次                       9//2 = 4<br/>■         x = “Yo!”                                                                    9.0//2.0 = 4.0<br/>■         y = x * 3 → y = “Yo!Yo!Yo!”                                    11.0//3 = 4.0<br/>● 除法 /<br/>○     注意：兩個整數相除，結果是實數<br/>■         x = 21, y = 10<br/>■         c = x / y → c = 2.1</p>
+<p><strong><span>Arithmetic Operators</span></strong></p>
+<p>● 如果要進行下面的運算 a= a+b （用a+b的結果為a重新賦值）<br/>● 在python可以改寫成： a += b<br/>● 所以算術運算符號可以有<br/>        +=     -=     *=     /=     %=     **=     //=</p>
+<p><span><strong>Modules or package （也稱為library）</strong></span></p>
+<p>● ”modules” or “packages”：通常是其他人寫好的函數或指令，打包成一個「工具庫」<br/> 方便分享使用。（非python內建，可能會需要下載安裝）<br/>○     本課程會用到的library: numpy (array), matplotlib (基本繪圖), basemap (地圖),<br/>         netCDF (讀nc檔)<br/>● 使用方式：import module_name<br/>○     在執行工具庫內的指令之前，就要先把modules 引進來（不然python不會認得<br/>        非內建的指令）<br/>○     使用工具庫內的指令：module_name.function (or module_name.constant)<br/>○     可以使用import module_name as xxx (xxx是你自己取的縮寫）<br/>        使用指令的語法就簡化成xxx.function，例如:<br/>             import math as m<br/>             x=m.cos(m.pi)</p>
+<br />git基本指令 << <a href='git基本指令.html'>Previous</a> <a href='vi 與 vim 的指令整理.html'>Next</a> >> vi 與 vim 的指令整理</div>
         
     <!-- footer -->
       <div class="container">

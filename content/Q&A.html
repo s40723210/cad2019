@@ -162,8 +162,41 @@ img.add_border {
           </div>
           
         </header>
-    <div id="tipue_search_content">Week6-9 << <a href='Week6-9.html'>Previous</a> <a href='Week15-18.html'>Next</a> >> Week15-18<br /><h1>Week10-14</h1>
-<br />Week6-9 << <a href='Week6-9.html'>Previous</a> <a href='Week15-18.html'>Next</a> >> Week15-18</div>
+    <div id="tipue_search_content">Video device << <a href='Video device.html'>Previous</a> <a href='About.html'>Next</a> >> About<br /><h1>Q&A</h1>
+<p>網頁無法顯示Brython，Spur Gear 導入錯誤，案F12來開啟Console檢查錯誤。</p>
+<p>問題(一)如下圖</p>
+<p><img caption="false" height="445" src="https://s40723210.github.io/40723210/images/chrome_rg3IpZC7Gr.png" width="650"/></p>
+<p>解決方法:</p>
+<p>開啟本倉儲資料夾，打開flaskapp.py，案ctrl+f來找到<span>page_content = request.form['page_content']，有2個地方都在底下加入</span></p>
+<div class="line number1 index0 alt2"><code class="html plain">page_content = page_content.replace('//<span> </span></code><code class="html color2">&lt;![CDATA[', '')</code></div>
+<div class="line number2 index1 alt1"><code class="html color2">page_content = page_content.replace('// ]]&gt;</code><code class="html plain">', '')<br/><br/></code></div>
+<div class="line number2 index1 alt1"><code class="html plain"></code></div>
+<div class="line number2 index1 alt1"><code class="html plain">save後即可解決問題。</code></div>
+<div class="line number2 index1 alt1"><code class="html plain"></code></div>
+<div class="line number2 index1 alt1"><code class="html plain">====================================================================</code></div>
+<div class="line number2 index1 alt1"><code class="html plain">問題(二)如下圖</code></div>
+<div class="line number2 index1 alt1"><code class="html plain"></code><img caption="false" height="289" src="https://s40723210.github.io/40723210/images/chrome_A6plPf3iNf.png" width="650"/></div>
+<div class="line number2 index1 alt1"></div>
+<div class="line number2 index1 alt1">解決方法:</div>
+<div class="line number2 index1 alt1"></div>
+<div class="line number2 index1 alt1">檢查本倉儲資料夾static底下是否有brython.js與<span>brython_stdlib.js，沒有的話就必須加入這2個js檔案，有的話就是導入指令錯誤如:</span></div>
+<div class="line number2 index1 alt1"><span></span></div>
+<div class="line number2 index1 alt1">
+<div class="line number1 index0 alt2"><code class="html comments">&lt;!-- 導入 Brython 標準程式庫 --&gt;</code></div>
+<div class="line number2 index1 alt1"><code class="html plain">&lt;</code><code class="html keyword">script</code><span> </span><code class="html color1">src</code><code class="html plain">=</code><code class="html string">"./../cmsimde/static/brython.js"</code><code class="html plain">&gt;&lt;/</code><code class="html keyword">script</code><code class="html plain">&gt;</code></div>
+<div class="line number3 index2 alt2"><code class="html plain">&lt;</code><code class="html keyword">script</code><span> </span><code class="html color1">src</code><code class="html plain">=</code><code class="html string">"./../cmsimde/static/brython_stdlib.js"</code><code class="html plain">&gt;&lt;/</code><code class="html keyword">script</code><code class="html plain">&gt;</code></div>
+<div class="line number3 index2 alt2"><code class="html plain"></code></div>
+<div class="line number3 index2 alt2"><code class="html plain">必須改為:</code></div>
+<div class="line number3 index2 alt2"><code class="html plain"></code></div>
+<div class="line number3 index2 alt2">
+<div class="line number1 index0 alt2"><code class="html comments">&lt;!-- 導入 Brython 標準程式庫 --&gt;</code></div>
+<div class="line number2 index1 alt1"><code class="html plain">&lt;</code><code class="html keyword">script</code><span> </span><code class="html color1">src</code><code class="html plain">=</code><code class="html string">"/static/brython.js"</code><code class="html plain">&gt;&lt;/</code><code class="html keyword">script</code><code class="html plain">&gt;</code></div>
+<div class="line number3 index2 alt2"><code class="html plain">&lt;</code><code class="html keyword">script</code><span> </span><code class="html color1">src</code><code class="html plain">=</code><code class="html string">"/static/brython_stdlib.js"</code><code class="html plain">&gt;&lt;/</code><code class="html keyword">script</code><code class="html plain">&gt;</code></div>
+</div>
+<div class="line number3 index2 alt2"><code class="html plain"></code></div>
+<div class="line number3 index2 alt2"><code class="html plain">即可解決顯示問題。</code></div>
+</div>
+<div class="line number2 index1 alt1"></div><br />Video device << <a href='Video device.html'>Previous</a> <a href='About.html'>Next</a> >> About</div>
         
     <!-- footer -->
       <div class="container">

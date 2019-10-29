@@ -162,8 +162,40 @@ img.add_border {
           </div>
           
         </header>
-    <div id="tipue_search_content">Week6-9 << <a href='Week6-9.html'>Previous</a> <a href='Week15-18.html'>Next</a> >> Week15-18<br /><h1>Week10-14</h1>
-<br />Week6-9 << <a href='Week6-9.html'>Previous</a> <a href='Week15-18.html'>Next</a> >> Week15-18</div>
+    <div id="tipue_search_content">Notes << <a href='Notes.html'>Previous</a> <a href='python基本語法.html'>Next</a> >> python基本語法<br /><h1>git基本指令</h1>
+<ol></ol>
+<p>mkdir name 創建一個文檔夾</p>
+<p>rm file 刪除</p>
+<p>cd name 進入文檔夾</p>
+<p>pwd 查看當前目錄</p>
+<p>git init<span> </span><span>把當前目錄變成</span>git<span>可以管理的倉庫 生成</span><span>.git</span><span>文檔夾</span></p>
+<p>git add name<span> </span><span>把文檔添加到暫存區</span>stage</p>
+<p>git commit -m “ ”<span> </span><span>把暫存區所有文檔提交到</span>git<span>當前分支上（本地倉庫）</span></p>
+<p>git status<span> </span><span>查看當前</span>git<span>倉庫狀態</span></p>
+<p>git diff file<span> </span><span>查看修改的文檔內容</span></p>
+<p>git log<span> </span><span>查看從最近到最遠的提交日誌</span></p>
+<p>git reset --hard<span> </span><span>版本號  回退到某版本（</span><span>HEAD</span><span>指向當前版本）</span></p>
+<pre class="highlight"><span>git push origin HEAD --force 上傳目前(hard)版本</span></pre>
+<p>git reflog  <span>查看命令操作歷史</span></p>
+<p>git checkout -- file    <span>丟棄工作區文檔的修改</span></p>
+<p>git reset HEAD file    <span>丟棄暫存區的文檔</span></p>
+<p>git rm file  <span>刪除工作區文檔後還需刪除</span>git<span>中的文檔</span></p>
+<p>git checkout --file  <span>恢復誤刪的</span>git<span>文檔</span></p>
+<p>關聯一個遠程倉庫   git remote add origin address</p>
+<p>第一次推送代碼到遠程倉庫 git push -u origin master</p>
+<p><span>（</span>-u<span>會把本地倉庫</span><span>master</span><span>分支和遠程倉庫的</span>master<span>分支</span><span>關聯起來）</span></p>
+<p>從遠程倉庫克隆代碼到本地 git clone address</p>
+<p>創建分支 git branch name</p>
+<p>切換分支 git checkout name     </p>
+<p>查看分支 git branch</p>
+<p>創建分支並切換到分支上　　git checkout -b name</p>
+<p>合併指定分支到當前分支上 git merge name</p>
+<p>合併後刪除分支 git branch -d name</p>
+<p><strong>合併時出現衝突要手動解決衝突，再提交，最後合併</strong>。</p>
+<p>將寫到一半的代碼從工作區拿走存起來 git stash</p>
+<p><span>恢復隱藏的代碼到工作區並刪除隱藏位置的代碼</span><span> </span> git stash pop</p>
+<p>強行刪除一個沒有合併過的分支 git branch -D name</p>
+<br />Notes << <a href='Notes.html'>Previous</a> <a href='python基本語法.html'>Next</a> >> python基本語法</div>
         
     <!-- footer -->
       <div class="container">
