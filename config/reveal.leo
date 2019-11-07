@@ -105,6 +105,15 @@
 <v t="leo.20191031192838.1"><vh>W8</vh>
 <v t="leo.20191031192838.2"><vh>封面投影片內容</vh></v>
 </v>
+<v t="leo.20191106210709.1"><vh>blog</vh>
+<v t="leo.20191106210709.2"><vh>封面投影片內容</vh></v>
+</v>
+<v t="leo.20191106210711.1"><vh>webots</vh>
+<v t="leo.20191106210711.2"><vh>封面投影片內容</vh></v>
+</v>
+<v t="leo.20191106210715.1"><vh>ssh</vh>
+<v t="leo.20191106210715.2"><vh>封面投影片內容</vh></v>
+</v>
 <v t="leo.20191031192845.1"><vh>W10</vh>
 <v t="leo.20191031192845.2"><vh>封面投影片內容</vh></v>
 </v>
@@ -140,10 +149,10 @@
 
 * [網站](https://s40723210.github.io/cad2019/content/)
 
-* [網誌](https://40723210.blogspot.com/)
+* [blogger](https://40723210.blogspot.com/)
 
 &lt;small&gt;
-Created by [KMOLab](http://lab.kmol.info/)
+Created by [李承澤](https://www.youtube.com/channel/UC8l7lxn3l0ENuxYDhLjgxRw)
 &lt;/small&gt;
 
 [CMSimfly 網誌](./../blog/index.html)
@@ -260,7 +269,7 @@ make.start()
 <t tx="leo.20180902120523.5">&lt;head&gt;
     &lt;meta charset="utf-8"&gt;
 &lt;title&gt;
-CMSimfly 網際內容管理
+s40723210 簡報
 &lt;/title&gt;
     &lt;meta name="description" content="A framework for easily creating beautiful presentations using HTML"&gt;
     &lt;meta name="author" content="Hakim El Hattab"&gt;
@@ -546,7 +555,13 @@ vertical: body pane on the botton</t>
 </t>
 <t tx="leo.20191031192838.2">#  Week8
 
-Ss</t>
+* 啟用 CMSiMDE中的網誌系統
+
+* 導入 Webots
+
+* 以ssh對Github 連線
+
+</t>
 <t tx="leo.20191031192845.1">&lt;section data-markdown&gt;
     &lt;script type="text/template"&gt;
 @others
@@ -556,11 +571,7 @@ Ss</t>
 
 						
 </t>
-<t tx="leo.20191031192845.2">#  Week10
-
-心得:這禮拜是學長來跟我們說明如何利用新版 P37-18.11 中的 eric6 軟體，可以利用內部的一些特殊模組，來做出一些連動的東西，而這次學長教的是利用slider、porgress bar、button來做一個小小的應用程式，我覺得很有趣可以自己創作想要的東西，像是登入器就可以利用eric6來做出來，可以認真的來學習這個軟體。
-
-
+<t tx="leo.20191031192845.2">END
 
 </t>
 <t tx="leo.20191031194052.1">&lt;section data-markdown&gt;
@@ -781,7 +792,7 @@ Ss</t>
 						
 </t>
 <t tx="leo.20191031210807.2">#  統一網站架構
-&lt;a&gt;&lt;img src="./../images/http.png" width="880" height="520"&gt;&lt;/a&gt;
+&lt;a&gt;&lt;img src="./../images/http.png" width="860" height="500"&gt;&lt;/a&gt;
 </t>
 <t tx="leo.20191031211821.1">&lt;section data-markdown&gt;
     &lt;script type="text/template"&gt;
@@ -882,6 +893,46 @@ Ss</t>
 
 
 
+</t>
+<t tx="leo.20191106210709.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+</t>
+<t tx="leo.20191106210709.2">##  啟用 CMSiMDE中的網誌系統
+
+&lt;iframe width="700" height="492" src="https://www.youtube.com/embed/7OKU6LOja3Y" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;
+
+</t>
+<t tx="leo.20191106210711.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+</t>
+<t tx="leo.20191106210711.2">##  導入 Webots
+
+&lt;iframe width="700" height="492" src="https://www.youtube.com/embed/wiN1nghgnew" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;
+</t>
+<t tx="leo.20191106210715.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+</t>
+<t tx="leo.20191106210715.2">##  以ssh對Github 連線
+
+&lt;iframe width="700" height="492" src="https://www.youtube.com/embed/k-sOF6PQa1I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;
 </t>
 </tnodes>
 </leo_file>
