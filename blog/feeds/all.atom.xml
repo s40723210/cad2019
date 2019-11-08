@@ -1,5 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>s40723210 網誌</title><link href="./" rel="alternate"></link><link href=".%5Cfeeds/all.atom.xml" rel="self"></link><id>./</id><updated>2018-09-10T11:00:00+08:00</updated><entry><title>2018 Fall CP 課程</title><link href=".%5C2018-Fall-32-bit-Windows.html" rel="alternate"></link><published>2018-09-10T11:00:00+08:00</published><updated>2018-09-10T11:00:00+08:00</updated><author><name>yen</name></author><id>tag:None,2018-09-10:.\2018-Fall-32-bit-Windows.html</id><summary type="html">&lt;p&gt;2018 Fall 一開始, 在一台已經 10 年的 32 位元的 Windows 7 操作系統中工作. 可攜的 Python 3.7.0 仍然可以配置, Leo Editor、PyQt5、flask、Markdown、pelican 與 bs4 的安裝, 也都沒有問題. 只有 Eric6 因為缺少必要模組與 Python 3.7.0 對應的 pyqt5-tools, 因此沒有安裝.&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>s40723210 網誌</title><link href="./" rel="alternate"></link><link href=".%5Cfeeds/all.atom.xml" rel="self"></link><id>./</id><updated>2019-11-08T15:30:00+08:00</updated><entry><title>電腦輔助設計實習-期中報告</title><link href=".%5C2018-Fall-32-bit-Windows-w9.html" rel="alternate"></link><published>2019-11-08T15:30:00+08:00</published><updated>2019-11-08T15:30:00+08:00</updated><author><name>s40723210</name></author><id>tag:None,2019-11-08:.\2018-Fall-32-bit-Windows-w9.html</id><summary type="html"></summary><content type="html">&lt;!-- PELICAN_END_SUMMARY --&gt;
+
+&lt;h2&gt;期中報告&lt;/h2&gt;
+&lt;p&gt;網址: &lt;a href="https://youtu.be/dWtvxaCwQTg"&gt;https://youtu.be/dWtvxaCwQTg&lt;/a&gt;&lt;/p&gt;
+&lt;iframe width="800" height="500" src="https://www.youtube.com/embed/dWtvxaCwQTg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;h2&gt;心得:&lt;/h2&gt;
+&lt;p&gt;從Week 2 - Week 9中我學到了很多的東西，這一學期使用的是亂數分組，所以組員有些都不太熟，一開始一樣都是創一個倉儲，然後維護他，將每周的內容和影片都上傳上去，Solvespace 是一個很小的繪圖軟體，可以隨身攜帶，所以非常的方便，只是功能不多而已，它跟我們之前所學的繪圖軟體不太一樣，所以我花了一點的時間去熟悉它，再來就是V-rep 這個軟體，我們教了一下，就換成Webots了。&lt;/p&gt;
+&lt;h2&gt;Week 2:&lt;/h2&gt;
+&lt;p&gt;進行亂數分組&lt;/p&gt;
+&lt;p&gt;課程、評分標準的說明&lt;/p&gt;
+&lt;p&gt;建立個人倉儲cad2019&lt;/p&gt;
+&lt;h2&gt;Week 3:&lt;/h2&gt;
+&lt;p&gt;Solvespace編譯&lt;/p&gt;
+&lt;h2&gt;Week 4:&lt;/h2&gt;
+&lt;p&gt;處理自己的倉儲&lt;/p&gt;
+&lt;p&gt;將每周進度完成&lt;/p&gt;
+&lt;p&gt;上傳有字幕的操作影片&lt;/p&gt;
+&lt;h2&gt;Week 5:&lt;/h2&gt;
+&lt;p&gt;Solvespace 操作&lt;/p&gt;
+&lt;h2&gt;Week 6:&lt;/h2&gt;
+&lt;p&gt;參數化零組件繪製&lt;/p&gt;
+&lt;p&gt;網際 V-rep 模型控制&lt;/p&gt;
+&lt;p&gt;新增啟動與停止按鈕&lt;/p&gt;
+&lt;h2&gt;Week 7:&lt;/h2&gt;
+&lt;p&gt;全班使用統一網站架構&lt;/p&gt;
+&lt;p&gt;Solvespace 納入學號&lt;/p&gt;
+&lt;p&gt;Solvespace 繪圖驗證&lt;/p&gt;
+&lt;h2&gt;Week 8:&lt;/h2&gt;
+&lt;p&gt;啟用 CMSiMDE中的網誌系統&lt;/p&gt;
+&lt;p&gt;導入 Webots&lt;/p&gt;
+&lt;p&gt;以ssh對Github 連線&lt;/p&gt;</content><category term="2018FallCP"></category></entry><entry><title>2018 Fall CP 課程</title><link href=".%5C2018-Fall-32-bit-Windows.html" rel="alternate"></link><published>2018-09-10T11:00:00+08:00</published><updated>2018-09-10T11:00:00+08:00</updated><author><name>yen</name></author><id>tag:None,2018-09-10:.\2018-Fall-32-bit-Windows.html</id><summary type="html">&lt;p&gt;2018 Fall 一開始, 在一台已經 10 年的 32 位元的 Windows 7 操作系統中工作. 可攜的 Python 3.7.0 仍然可以配置, Leo Editor、PyQt5、flask、Markdown、pelican 與 bs4 的安裝, 也都沒有問題. 只有 Eric6 因為缺少必要模組與 Python 3.7.0 對應的 pyqt5-tools, 因此沒有安裝.&lt;/p&gt;
 </summary><content type="html">&lt;p&gt;2018 Fall 一開始, 在一台已經 10 年的 32 位元的 Windows 7 操作系統中工作. 可攜的 Python 3.7.0 仍然可以配置, Leo Editor、PyQt5、flask、Markdown、pelican 與 bs4 的安裝, 也都沒有問題. 只有 Eric6 因為缺少必要模組與 Python 3.7.0 對應的 pyqt5-tools, 因此沒有安裝.&lt;/p&gt;
 
 
