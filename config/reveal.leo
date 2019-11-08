@@ -792,6 +792,7 @@ vertical: body pane on the botton</t>
 						
 </t>
 <t tx="leo.20191031210807.2">#  統一網站架構
+
 &lt;a&gt;&lt;img src="./../images/http.png" width="860" height="500"&gt;&lt;/a&gt;
 </t>
 <t tx="leo.20191031211821.1">&lt;section data-markdown&gt;
@@ -885,7 +886,9 @@ vertical: body pane on the botton</t>
 11.https://youtu.be/b07TfCOscfg
 12.https://youtu.be/LwCUEgcbBps
 13.https://youtu.be/jkpvg-6Rbag
+
 14.https://youtu.be/-AZChpDNk0U
+
 15.https://youtu.be/iUxtuX9dR1M
 16.https://youtu.be/GzioJn-QpB8
 17.https://youtu.be/hwl_d8r8Hjw
