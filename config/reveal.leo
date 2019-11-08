@@ -793,7 +793,7 @@ vertical: body pane on the botton</t>
 </t>
 <t tx="leo.20191031210807.2">#  統一網站架構
 
-&lt;a&gt;&lt;img src="./../images/http.png" width="860" height="500"&gt;&lt;/a&gt;
+&lt;a&gt;&lt;img src="https://upload.cc/i1/2019/11/08/1Uset3.png" width="860" height="500"&gt;&lt;/a&gt;
 </t>
 <t tx="leo.20191031211821.1">&lt;section data-markdown&gt;
     &lt;script type="text/template"&gt;
