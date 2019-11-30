@@ -162,37 +162,9 @@ img.add_border {
           </div>
           
         </header>
-    <div id="tipue_search_content">Weeks << <a href='Weeks.html'>Previous</a> <a href='Week6-9.html'>Next</a> >> Week6-9<br /><h1>Week2-5</h1>
-<h4 class="post-title entry-title" itemprop="name"><strong>建立個人cad2019倉儲</strong></h4>
-<p><span>1.下載<a href="https://drive.google.com/file/d/1fxMdqdCoCL__O1IpZ-Sv-A_4-c77Wx4E/view?usp=sharing">2019Fall可攜套件.7z</a>，完成後開啟start。</span><span><br/></span><span></span><span><span>2.先登入自己的github帳號，</span><span>創建一個新的倉儲cad2019。</span></span><span><span><br/></span><span>3.進入要存放該資料的資料夾tmp。</span></span><span><span><br/></span></span><span></span><span><span>4.git clone </span><span>https://github.com/s40723210/cad2019 。</span><span><br/></span><span>5.</span><span>git submodule add https://github.com/mdecourse/cmsimde.git。</span></span><span><span><br/></span></span><span></span><span><span>6.再進入cmsimde，輸入python -m pip install flask_cors。</span></span><span><span><br/></span></span><span></span><span><span>7.完成後，python wsgi.py 開始編輯倉儲。</span></span><span><span><br/></span></span><span></span><span><span>8.login密碼為admin，gitconfig要有帳號密碼。</span></span><span><span><br/></span></span><span><span>9.處理完，git status &gt; git add . &gt; git commit -m "標題" &gt; git push。</span></span><span><span><br/></span></span><span><span>10.開啟github倉儲設定，點選要推送的branch即可。</span></span></p>
-<p><span>我的教學影片(有字幕):<a href="https://youtu.be/jBFzju1F43s">https://youtu.be/jBFzju1F43s<br/><br/><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/jBFzju1F43s" width="560"></iframe></a></span><a href="https://youtu.be/ta6FqOT-EHQ"><br/></a></p>
-<hr/>
-<h4><strong>Solvespace 編譯</strong></h4>
-<div><span></span></div>
-<div>
-<div><span>1.將Y:\portablegit\bin\sh.exe的sh.exe改成 &gt; sh_rename_for_solvespace.exe。</span></div>
-<div><span><span>2.到tmp下git clone --recurse-submodules https://github.com/solvespace/solvespace.git 。</span></span></div>
-<div><span><span>3.進入tmp下的solvespace\extlib\angle\CMakeLists.txt。</span></span></div>
-<div><span><span>4.將CMakeLists.txt中的第713 and 714行前面加上#。</span></span></div>
-<div><span><span>5.</span>cd solvespace/extlib/libpng &gt; <span>mkdir build &gt; cd build。</span></span></div>
-<div><span><span>6.cmake .. -G "MinGW Makefiles" -DCMAKE_BUILD_TYPE=Release &gt; mingw32-make。</span></span></div>
-<div><span><span>7.</span>把libpng.dll.a 改名為 libpng_static.a 並放到Y:/msys64\mingw64\lib。</span></div>
-<div><span>8.在solvespace建立build資料夾，在cd build。</span></div>
-<div><span>9.cmake .. -G "MinGW Makefiles" -DCMAKE_BUILD_TYPE=Release &gt; mingw32-make。</span></div>
-<div><span>10.到bin內開啟solvespace程式，把需要的檔案從Y:/msys64\mingw64\bin拿。</span></div>
-</div>
-<p><span>我的教學影片(有字幕):<a href="https://youtu.be/s5Onnb9CPSI">https://youtu.be/s5Onnb9CPSI<br/></a><br/></span><span><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/s5Onnb9CPSI" width="560"></iframe></span></p>
-<hr/>
-<h4 class="post-title entry-title" itemprop="name"><strong>解決cmake .. -G的Erro</strong></h4>
-<p><span>在用cmake .. -G "MinGW Makefiles" -DCMAKE_BUILD_TYPE=Release執行時，碰到了</span><span>Y:/msys64/mingw64/bin/gcc.exe -- broken，無法執行的時候，是因為在路徑上有中文字，才讓程式出現錯誤的，以下是我的如何處理的影片。</span></p>
-<p><span>我的教學影片(有字幕):</span><span><a href="https://youtu.be/yS-NvOgfCRY">https://youtu.be/yS-NvOgfCRY</a><a href="https://youtu.be/yS-NvOgfCRY"><br/></a></span><br/><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/yS-NvOgfCRY" width="560"></iframe></p>
-<hr/>
-<h4><strong>Solvespace 操作</strong></h4>
-<p><span style="color: #000000;"><span>1.進入課程選擇你要操作的Solvespace。</span><br/><span><br/></span><span></span><span>2.開啟自己隨身的Solvespace程式。</span><br/><span><br/></span><span></span><span>3.選取圖示或使用快捷鍵來進行繪畫。</span><br/><span><br/></span><span></span><span>4.將邊長設定為同等大小，再</span><span>長出形成一個立體圖。</span><br/><span><br/></span><span></span><span>6.讓長出的長度也同等大小，就能做出一個正方形。</span><br/><span><br/></span><span></span><span>7.點選右邊的框框來更改外觀和透明度。</span><br/><span><br/></span><span></span><span>8.存檔存為html檔，再來建立一個基本的網頁html。</span><br/><span><br/></span><span></span><span>7.輸入指令來將該圖檔導入，就有完整的網頁html。<br/></span><br/><span>☆可參照我的<span> </span><a href="https://s40723210.github.io/cad2019/content/SolveSpace%E7%9A%84%E5%BF%AB%E6%8D%B7%E9%8D%B5.html">SolveSpace快捷鍵</a></span></span></p>
-<p><span style="color: #0000ff;"><span style="color: #ff0000;">成品圖(可滑鼠拖移):</span><br/></span><br/><iframe height="300" src="./../solvespace/untitled.html" width="500"></iframe><br/><br/><span>我的操作影片(有字幕):<a href="https://youtu.be/4ujff-3Hbkc">https://youtu.be/4ujff-3Hbkc</a><br/></span></p>
-<p><span><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/4ujff-3Hbkc" width="560"></iframe></span></p>
-<hr/>
-<br />Weeks << <a href='Weeks.html'>Previous</a> <a href='Week6-9.html'>Next</a> >> Week6-9</div>
+    <div id="tipue_search_content">NX-history << <a href='NX-history.html'>Previous</a> <a href='Creo(ProE)-history.html'>Next</a> >> Creo(ProE)-history<br /><h1>Inventor-history</h1>
+<p></p>
+<br />NX-history << <a href='NX-history.html'>Previous</a> <a href='Creo(ProE)-history.html'>Next</a> >> Creo(ProE)-history</div>
         
     <!-- footer -->
       <div class="container">
