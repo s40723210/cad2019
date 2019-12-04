@@ -117,6 +117,27 @@
 <v t="leo.20191031192845.1"><vh>W10</vh>
 <v t="leo.20191031192845.2"><vh>封面投影片內容</vh></v>
 </v>
+<v t="leo.20191204174421.1"><vh>fork</vh>
+<v t="leo.20191204174421.2"><vh>封面投影片內容</vh></v>
+</v>
+<v t="leo.20191204174426.1"><vh>pull requests</vh>
+<v t="leo.20191204174426.2"><vh>封面投影片內容</vh></v>
+</v>
+<v t="leo.20191204174423.1"><vh>Batch Command</vh>
+<v t="leo.20191204174423.2"><vh>封面投影片內容</vh></v>
+</v>
+<v t="leo.20191204174425.1"><vh>GitExtensions</vh>
+<v t="leo.20191204174425.2"><vh>封面投影片內容</vh></v>
+</v>
+<v t="leo.20191204175147.1"><vh>W12</vh>
+<v t="leo.20191204175147.2"><vh>封面投影片內容</vh></v>
+</v>
+<v t="leo.20191204174429.1"><vh>Webots Tutorial-1</vh>
+<v t="leo.20191204174429.2"><vh>封面投影片內容</vh></v>
+</v>
+<v t="leo.20191204181003.1"><vh>V-rep bubbleRob Tutorial</vh>
+<v t="leo.20191204181003.2"><vh>封面投影片內容</vh></v>
+</v>
 <v t="leo.20180902120523.11"><vh>快捷鍵</vh>
 <v t="leo.20180902120523.12"><vh>投影片快捷鍵</vh></v>
 </v>
@@ -571,7 +592,15 @@ vertical: body pane on the botton</t>
 
 						
 </t>
-<t tx="leo.20191031192845.2">END
+<t tx="leo.20191031192845.2">#  Week10
+
+* 組長創建分組倉儲
+
+* 組員fork分組倉儲
+
+* 協同整理教科書內容
+
+* 整理繪圖軟體的歷史
 
 </t>
 <t tx="leo.20191031194052.1">&lt;section data-markdown&gt;
@@ -937,5 +966,98 @@ vertical: body pane on the botton</t>
 
 &lt;iframe width="700" height="492" src="https://www.youtube.com/embed/k-sOF6PQa1I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;
 </t>
+<t tx="leo.20191204174421.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+</t>
+<t tx="leo.20191204174421.2">##  Fork倉儲
+
+&lt;iframe width="700" height="490" src="https://www.youtube.com/embed/1bZ16BgmF8c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;
+</t>
+<t tx="leo.20191204174423.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+</t>
+<t tx="leo.20191204174423.2">##  Batch Command設定
+
+&lt;iframe width="700" height="490" src="https://www.youtube.com/embed/Zw1n_6ba4C8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;</t>
+<t tx="leo.20191204174425.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+</t>
+<t tx="leo.20191204174425.2">##  GitExtensions教學
+
+&lt;iframe width="700" height="490" src="https://www.youtube.com/embed/1j9J9JUULEo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;</t>
+<t tx="leo.20191204174426.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+</t>
+<t tx="leo.20191204174426.2">##  pull requests
+
+pull requests正向:是組員點選New pull request將資料推送回各組倉儲，再由組長進行審核，確認無誤之後即可按同意來合併。
+
+pull requests反向:一樣是組員點選New pull request，不過要特別改成分組倉儲退送至個人倉儲，意思就是把個人的倉儲版次更新，然後在自己點選同意。</t>
+<t tx="leo.20191204174429.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+</t>
+<t tx="leo.20191204174429.2">##  Webots Tutorial-1 操作
+
+&lt;iframe width="700" height="492" src="https://www.youtube.com/embed/zINF95Z_b1s" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;</t>
+<t tx="leo.20191204175147.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+</t>
+<t tx="leo.20191204175147.2">#  Week12
+
+* 整理Nx教科書內容
+
+* Webots Tutorial-1 操作
+
+* V-rep bubbleRob Tutorial 操作
+
+</t>
+<t tx="leo.20191204181003.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+</t>
+<t tx="leo.20191204181003.2">###  V-rep bubbleRob Tutorial 操作
+
+&lt;iframe width="700" height="492" src="https://www.youtube.com/embed/BStp8J-KXuY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;</t>
 </tnodes>
 </leo_file>
