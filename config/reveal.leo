@@ -132,6 +132,9 @@
 <v t="leo.20191204175147.1"><vh>W12</vh>
 <v t="leo.20191204175147.2"><vh>封面投影片內容</vh></v>
 </v>
+<v t="leo.20191205234553.1"><vh>比較</vh>
+<v t="leo.20191205234553.2"><vh>封面投影片內容</vh></v>
+</v>
 <v t="leo.20191204174429.1"><vh>Webots Tutorial-1</vh>
 <v t="leo.20191204174429.2"><vh>封面投影片內容</vh></v>
 </v>
@@ -1059,5 +1062,19 @@ pull requests反向:一樣是組員點選New pull request，不過要特別改�
 <t tx="leo.20191204181003.2">###  V-rep bubbleRob Tutorial 操作
 
 &lt;iframe width="700" height="492" src="https://www.youtube.com/embed/BStp8J-KXuY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;</t>
+<t tx="leo.20191205234553.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+</t>
+<t tx="leo.20191205234553.2">### Webots 與 V-rep Tutorial
+
+&lt;font size="5.5"&gt;
+使用心得:目前使用下來，我覺得webots比較好用，webots的場景逼真又接近於現實，而且也能模擬許多複雜的狀況，在設定上也提供了很多的範本，控制器程式就在旁邊也易於更改。相較之下v-rep的逼真度就比較弱，雖然比webots還易於編輯零件，也比較好在各個零件加入一些感測器或機械結構，可是要一個一個定義也是很麻煩的，模擬上不會說比webots還要差很多，可是v-rep的遠端控制，就贏了webots許多，v-rep能通過應用程序接口，也就是雲端控制系統，能廣泛的應用在許多開發上，解論我個人傾向於使用webots，還是越逼真越好，這樣才是開發者想要的。
+&lt;/font&gt;</t>
 </tnodes>
 </leo_file>
