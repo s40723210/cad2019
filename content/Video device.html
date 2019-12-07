@@ -31,6 +31,7 @@
         <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script>
         <link rel="stylesheet" href="./../cmsimde/static/tipuesearch/css/normalize.min.css">
         <script src="./../cmsimde/static/tipuesearch/tipuesearch_set.js"></script>
+        <script src="https://kit.fontawesome.com/6fad785add.js" crossorigin="anonymous"></script>        
         <script type="text/javascript">
              document.oncontextmenu = function(){
                     return false;
@@ -38,6 +39,22 @@
              document.onselectstart = function(){
                     return false;
              }
+        </script>
+        <script type="text/javascript">
+           $(function(){
+                $(".gotop").click(function(){
+                    jQuery("html,body").animate({
+                        scrollTop:0
+                    },100);
+                });
+                $(window).scroll(function() {
+                    if ( $(this).scrollTop() > 700){
+                        $(".gotop").fadeIn("fast");
+                    } else {
+                        $(".gotop").stop().fadeOut("fast");
+                    }
+                });
+            });
         </script>
         <script src="tipuesearch_content.js"></script>
         <link rel="stylesheet" href="./../cmsimde/static/tipuesearch/css/tipuesearch.css">
@@ -127,7 +144,6 @@ img.add_border {
       </div>
       <div class="site-mobile-menu-body"></div>
     </div>
-    
             <header class="site-navbar py-4 bg-white" role="banner">
               <div class="container-fluid">
                 <div class="row align-items-center">
@@ -159,8 +175,7 @@ img.add_border {
               </div>
 
             </div>
-          </div>
-          
+          </div>  
         </header>
     <div id="tipue_search_content">Nx12快捷鍵 << <a href='Nx12快捷鍵.html'>Previous</a> <a href='Q&A.html'>Next</a> >> Q&A<br /><h1>Video device</h1>
 <p>我是使用ShareX<span>如圖(一)</span>來進行拍攝影片的如圖(一)，拍攝完成後再使用aegisub<span>如圖(二)來進行字幕的撰寫，最後再將字幕與影片融合，用arctime如圖(三)來進行融合與匯出影片的。</span></p>
@@ -183,6 +198,9 @@ img.add_border {
             </p>
         </div>
       </div>
+      <div class="gotop">
+          <i class="fa fa-arrow-circle-up fa-200x"></i>
+      </div>           
     <!-- for footer -->
     
         </div> <!-- for site wrap -->

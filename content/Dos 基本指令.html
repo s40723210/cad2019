@@ -31,6 +31,7 @@
         <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script>
         <link rel="stylesheet" href="./../cmsimde/static/tipuesearch/css/normalize.min.css">
         <script src="./../cmsimde/static/tipuesearch/tipuesearch_set.js"></script>
+        <script src="https://kit.fontawesome.com/6fad785add.js" crossorigin="anonymous"></script>        
         <script type="text/javascript">
              document.oncontextmenu = function(){
                     return false;
@@ -38,6 +39,22 @@
              document.onselectstart = function(){
                     return false;
              }
+        </script>
+        <script type="text/javascript">
+           $(function(){
+                $(".gotop").click(function(){
+                    jQuery("html,body").animate({
+                        scrollTop:0
+                    },100);
+                });
+                $(window).scroll(function() {
+                    if ( $(this).scrollTop() > 700){
+                        $(".gotop").fadeIn("fast");
+                    } else {
+                        $(".gotop").stop().fadeOut("fast");
+                    }
+                });
+            });
         </script>
         <script src="tipuesearch_content.js"></script>
         <link rel="stylesheet" href="./../cmsimde/static/tipuesearch/css/tipuesearch.css">
@@ -127,7 +144,6 @@ img.add_border {
       </div>
       <div class="site-mobile-menu-body"></div>
     </div>
-    
             <header class="site-navbar py-4 bg-white" role="banner">
               <div class="container-fluid">
                 <div class="row align-items-center">
@@ -159,8 +175,7 @@ img.add_border {
               </div>
 
             </div>
-          </div>
-          
+          </div>  
         </header>
     <div id="tipue_search_content">vi 與 vim 的指令整理 << <a href='vi 與 vim 的指令整理.html'>Previous</a> <a href='SolveSpace的快捷鍵.html'>Next</a> >> SolveSpace的快捷鍵<br /><h1>Dos 基本指令</h1>
 <p>1. cd (Change Directory): 移動到某個資料夾<br/>2. cd..:回上一層<br/>3. cd\(斜線代表「根目錄(root)):回 c 槽<br/>4. cd 資料夾名稱:切換至某個資料夾<br/>5. 切換到其他硬碟 d:<br/>6. dir : 顯示資料夾底下的內容<br/>7. dir/w: 橫向排列<br/>8. dir/p: 分頁<br/>9. nslookup 域名: 域名(Nomain name)查 IP<br/>10. copy con: 建立檔案<br/>copy con test.bat (enter) (檔案要副檔名)<br/>→ this is line one (enter) (輸入內容)<br/>→ this is line two (結束時 ctrl + z) (enter)<br/>11. del 檔案名稱: 刪除檔案<br/>12. md (Make Directery) 目錄名稱:建立目錄<br/>13. rd 目錄名稱: 刪除一個空目錄<br/>/s:刪除目錄下的所有子目錄和檔案 /q 取消系統詢問刪除與否的確認訊息<br/>14. copy 原檔名 新檔名: 複製檔案<br/>15. xcopy 原目錄名 新目錄名: 複製目錄<br/>/D:只複製比目的檔還新的檔案<br/>/s: 複製所有子目錄和檔案除空目錄外<br/>16. type: 顯示檔案內容<br/>17. ren 原檔名 新檔名:更改檔名<br/>18. help: 顯示目前版本 DOS 的幫助資訊<br/>19. move: 移動檔案，或重新命名一個檔案或目錄<br/>移動檔案: move 檔案名稱 目錄名稱<br/>重新命名檔案: move 原檔名 新檔名<br/>重新命名目錄: move 原目錄名 新目錄名<br/>20. 呼叫程式<br/>exployer 檔案總管 taskmgr 工作管理員<br/>logoff 登出 devmgmt.msc 裝置管理員<br/>calc 計算機 control 控制台<br/>notepad 記事本 wordpad write<br/>mspaint 小畫家 charmap 字元對應表<br/>magnify 放大鏡 clean mgr 磁碟清理<br/>osk 螢幕小鍵盤 msinfo32 系統資訊<br/>compmgmt.msc 電腦管理 msconfig 系統設定公用程式</p>
@@ -176,6 +191,9 @@ img.add_border {
             </p>
         </div>
       </div>
+      <div class="gotop">
+          <i class="fa fa-arrow-circle-up fa-200x"></i>
+      </div>           
     <!-- for footer -->
     
         </div> <!-- for site wrap -->
