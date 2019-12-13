@@ -29,6 +29,7 @@
         <!-- <script src="./../cmsimde/static/jquery.js"></script> -->
         <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
         <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <link rel="stylesheet" href="./../cmsimde/static/tipuesearch/css/normalize.min.css">
         <script src="./../cmsimde/static/tipuesearch/tipuesearch_set.js"></script>
         <script src="https://kit.fontawesome.com/6fad785add.js" crossorigin="anonymous"></script>        
@@ -43,9 +44,7 @@
         <script type="text/javascript">
            $(function(){
                 $(".gotop").click(function(){
-                    jQuery("html,body").animate({
-                        scrollTop:0
-                    },100);
+                      $("html,body").animate({scrollTop:0 },100);
                 });
                 $(window).scroll(function() {
                     if ( $(this).scrollTop() > 700){
@@ -53,7 +52,7 @@
                     } else {
                         $(".gotop").stop().fadeOut("fast");
                     }
-                });
+                }).scroll();
             });
         </script>
         <script src="tipuesearch_content.js"></script>
