@@ -1703,11 +1703,10 @@ h1, h2, h3, h4, h5,
 
 .testimonial-wrap .owl-nav {
   display: none; }
-.gotop{
+.gotop {
     color: rgba(44, 199, 242, 0.4);
     position: fixed;
 	font-size: 100px;
     bottom: 200px;
     right: 130px;
-    cursor: pointer;
-}
+    cursor: pointer; }
