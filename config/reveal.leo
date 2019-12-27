@@ -87,20 +87,8 @@
 <v t="leo.20191031211821.1"><vh>成品</vh>
 <v t="leo.20191031211821.2"><vh>封面投影片內容</vh></v>
 </v>
-<v t="leo.20191031212133.1"><vh>成品</vh>
-<v t="leo.20191031212133.2"><vh>封面投影片內容</vh></v>
-</v>
-<v t="leo.20191031212637.1"><vh>成品</vh>
-<v t="leo.20191031212637.2"><vh>封面投影片內容</vh></v>
-</v>
-<v t="leo.20191031212848.1"><vh>成品</vh>
-<v t="leo.20191031212848.2"><vh>封面投影片內容</vh></v>
-</v>
-<v t="leo.20191031213242.1"><vh>影片</vh>
-<v t="leo.20191031213242.2"><vh>封面投影片內容</vh></v>
-</v>
-<v t="leo.20191031214207.1"><vh>影片</vh>
-<v t="leo.20191031214207.2"><vh>封面投影片內容</vh></v>
+<v t="leo.20191227174813.1"><vh>成品</vh>
+<v t="leo.20191227174813.2"><vh>封面投影片內容</vh></v>
 </v>
 <v t="leo.20191031192838.1"><vh>W8</vh>
 <v t="leo.20191031192838.2"><vh>封面投影片內容</vh></v>
@@ -113,6 +101,12 @@
 </v>
 <v t="leo.20191106210715.1"><vh>ssh</vh>
 <v t="leo.20191106210715.2"><vh>封面投影片內容</vh></v>
+</v>
+<v t="leo.20191227173531.1"><vh>W9</vh>
+<v t="leo.20191227173531.2"><vh>封面投影片內容</vh></v>
+</v>
+<v t="leo.20191227175232.1"><vh>影片</vh>
+<v t="leo.20191227175232.2"><vh>封面投影片內容</vh></v>
 </v>
 <v t="leo.20191031192845.1"><vh>W10</vh>
 <v t="leo.20191031192845.2"><vh>封面投影片內容</vh></v>
@@ -140,6 +134,27 @@
 </v>
 <v t="leo.20191204181003.1"><vh>V-rep bubbleRob Tutorial</vh>
 <v t="leo.20191204181003.2"><vh>封面投影片內容</vh></v>
+</v>
+<v t="leo.20191227175615.1"><vh>W13</vh>
+<v t="leo.20191227175615.2"><vh>封面投影片內容</vh></v>
+</v>
+<v t="leo.20191227175846.1"><vh>W14</vh>
+<v t="leo.20191227175846.2"><vh>封面投影片內容</vh></v>
+</v>
+<v t="leo.20191227180026.1"><vh>webots1-6</vh>
+<v t="leo.20191227180026.2"><vh>封面投影片內容</vh></v>
+</v>
+<v t="leo.20191227190829.1"><vh>W15</vh>
+<v t="leo.20191227190829.2"><vh>封面投影片內容</vh></v>
+</v>
+<v t="leo.20191227191040.1"><vh>wrl</vh>
+<v t="leo.20191227191040.2"><vh>封面投影片內容</vh></v>
+</v>
+<v t="leo.20191227191209.1"><vh>W16</vh>
+<v t="leo.20191227191209.2"><vh>封面投影片內容</vh></v>
+</v>
+<v t="leo.20191227191310.1"><vh>影片</vh>
+<v t="leo.20191227191310.2"><vh>封面投影片內容</vh></v>
 </v>
 <v t="leo.20180902120523.11"><vh>快捷鍵</vh>
 <v t="leo.20180902120523.12"><vh>投影片快捷鍵</vh></v>
@@ -458,17 +473,14 @@ vertical: body pane on the botton</t>
 
 						
 </t>
-<t tx="leo.20191031192720.2">#  Week2
+<t tx="leo.20191031192720.2">##  [Week2](https://s40723210.github.io/cad2019/content/Week2-5.html)
 
 * 進行亂數分組
-
+&lt;hr&gt;
 * 課程、評分標準的說明
-
+&lt;hr&gt;
 * 建立個人倉儲cad2019
-
-
-
-
+&lt;hr&gt;
 </t>
 <t tx="leo.20191031192731.1">&lt;section data-markdown&gt;
     &lt;script type="text/template"&gt;
@@ -495,10 +507,10 @@ vertical: body pane on the botton</t>
 
 						
 </t>
-<t tx="leo.20191031192749.2">#  Week3
+<t tx="leo.20191031192749.2">##  [Week3](https://s40723210.github.io/cad2019/content/Week2-5.html)
 
 * Solvespace編譯
-
+&lt;hr&gt;
 * 每個人必須在自己的隨身碟中，完成Solvespace的編譯，並且將編譯的過程紀錄，再建立一個有字幕的操作影片，上傳到自己的Youtube中，也要導入至個人倉儲之中。
 
 </t>
@@ -526,14 +538,14 @@ vertical: body pane on the botton</t>
 
 						
 </t>
-<t tx="leo.20191031192800.2">#  Week4
+<t tx="leo.20191031192800.2">##  [Week4](https://s40723210.github.io/cad2019/content/Week2-5.html)
 
 * 處理自己的倉儲
-
+&lt;hr&gt;
 * 將每周進度完成
-
+&lt;hr&gt;
 * 上傳有字幕的操作影片
-
+&lt;hr&gt;
 </t>
 <t tx="leo.20191031192805.1">&lt;section data-markdown&gt;
     &lt;script type="text/template"&gt;
@@ -558,16 +570,16 @@ vertical: body pane on the botton</t>
 
 						
 </t>
-<t tx="leo.20191031192809.2">#  Week7
+<t tx="leo.20191031192809.2">##  [Week7](https://s40723210.github.io/cad2019/content/Week6-9.html)
 
 * 全班使用統一網站架構
-
+&lt;hr&gt;
 * Solvespace 納入學號
-
+&lt;hr&gt;
 * Solvespace 繪圖驗證
-
+&lt;hr&gt;
 * 從老師提供的零件網頁，進行Solvespace 繪圖驗證。
-</t>
+&lt;hr&gt;</t>
 <t tx="leo.20191031192838.1">&lt;section data-markdown&gt;
     &lt;script type="text/template"&gt;
 @others
@@ -577,14 +589,14 @@ vertical: body pane on the botton</t>
 
 						
 </t>
-<t tx="leo.20191031192838.2">#  Week8
+<t tx="leo.20191031192838.2">##  [Week8](https://s40723210.github.io/cad2019/content/Week6-9.html)
 
 * 啟用 CMSiMDE中的網誌系統
-
+&lt;hr&gt;
 * 導入 Webots
-
+&lt;hr&gt;
 * 以ssh對Github 連線
-
+&lt;hr&gt;
 </t>
 <t tx="leo.20191031192845.1">&lt;section data-markdown&gt;
     &lt;script type="text/template"&gt;
@@ -595,16 +607,16 @@ vertical: body pane on the botton</t>
 
 						
 </t>
-<t tx="leo.20191031192845.2">#  Week10
+<t tx="leo.20191031192845.2">##  [Week10](https://s40723210.github.io/cad2019/content/Week10-14.html)
 
 * 組長創建分組倉儲
-
+&lt;hr&gt;
 * 組員fork分組倉儲
-
+&lt;hr&gt;
 * 協同整理教科書內容
-
+&lt;hr&gt;
 * 整理繪圖軟體的歷史
-
+&lt;hr&gt;
 </t>
 <t tx="leo.20191031194052.1">&lt;section data-markdown&gt;
     &lt;script type="text/template"&gt;
@@ -666,10 +678,10 @@ vertical: body pane on the botton</t>
 
 						
 </t>
-<t tx="leo.20191031204020.2">#  Week5
+<t tx="leo.20191031204020.2">##  [Week5](https://s40723210.github.io/cad2019/content/Week2-5.html)
 
 * Solvespace 操作
-
+&lt;hr&gt;
 * 開始練習使用Solvespace，每一組組員各自分配Solvespace Tutorial影片來進行操作，一樣必須上傳有字幕的影片。
 
 
@@ -714,17 +726,17 @@ vertical: body pane on the botton</t>
 
 						
 </t>
-<t tx="leo.20191031205658.2">##  Week6
+<t tx="leo.20191031205658.2">##  [Week6](https://s40723210.github.io/cad2019/content/Week6-9.html)
 ###  Task 1 流程執行查驗回報
 
 * 參數化零組件繪製
-
+&lt;hr&gt;
 * 網際 V-rep 模型控制
-
+&lt;hr&gt;
 * 新增啟動與停止按鈕
-
+&lt;hr&gt;
 * 完成三項任務之後，進行回報並貼上倉儲網址
-
+&lt;hr&gt;
 </t>
 <t tx="leo.20191031205958.1">&lt;section data-markdown&gt;
     &lt;script type="text/template"&gt;
@@ -836,97 +848,9 @@ vertical: body pane on the botton</t>
 
 						
 </t>
-<t tx="leo.20191031211821.2">#  成品圖
+<t tx="leo.20191031211821.2">##  成品圖
 
-&lt;iframe height="490" src="./../solvespace/001.html" width="680"&gt;&lt;/iframe&gt;
-
-</t>
-<t tx="leo.20191031212133.1">&lt;section data-markdown&gt;
-    &lt;script type="text/template"&gt;
-@others
-    &lt;/script&gt;
-&lt;/section&gt;
-
-
-						
-</t>
-<t tx="leo.20191031212133.2">#  成品圖
-
-&lt;iframe height="260" src="./../solvespace/001.1.html" width="300"&gt;&lt;/iframe&gt;&lt;iframe height="260" src="./../solvespace/003.html" width="300"&gt;&lt;/iframe&gt;&lt;iframe height="260" src="./../solvespace/004.html" width="300"&gt;&lt;/iframe&gt;&lt;iframe height="260" src="./../solvespace/006.html" width="300"&gt;&lt;/iframe&gt;&lt;iframe height="260" src="./../solvespace/008.html" width="300"&gt;&lt;/iframe&gt;&lt;iframe height="260" src="./../solvespace/009.html" width="300"&gt;
-
-</t>
-<t tx="leo.20191031212637.1">&lt;section data-markdown&gt;
-    &lt;script type="text/template"&gt;
-@others
-    &lt;/script&gt;
-&lt;/section&gt;
-
-
-						
-</t>
-<t tx="leo.20191031212637.2">#  成品圖
-
-&lt;iframe height="260" src="./../solvespace/010.html" width="300"&gt;&lt;/iframe&gt;&lt;iframe height="260" src="./../solvespace/011.html" width="300"&gt;&lt;/iframe&gt;&lt;iframe height="260" src="./../solvespace/012.html" width="300"&gt;&lt;/iframe&gt;&lt;iframe height="260" src="./../solvespace/013.html" width="300"&gt;&lt;/iframe&gt;&lt;iframe height="260" src="./../solvespace/014.html" width="300"&gt;&lt;/iframe&gt;&lt;iframe height="260" src="./../solvespace/015.html" width="300"&gt;
-
-</t>
-<t tx="leo.20191031212848.1">&lt;section data-markdown&gt;
-    &lt;script type="text/template"&gt;
-@others
-    &lt;/script&gt;
-&lt;/section&gt;
-
-
-						
-</t>
-<t tx="leo.20191031212848.2">#  成品圖
-
-&lt;iframe height="260" src="./../solvespace/016.html" width="300"&gt;&lt;/iframe&gt;&lt;iframe height="260" src="./../solvespace/017.html" width="300"&gt;&lt;/iframe&gt;&lt;iframe height="260" src="./../solvespace/018.html" width="300"&gt;&lt;/iframe&gt;
-</t>
-<t tx="leo.20191031213242.1">&lt;section data-markdown&gt;
-    &lt;script type="text/template"&gt;
-@others
-    &lt;/script&gt;
-&lt;/section&gt;
-
-
-						
-</t>
-<t tx="leo.20191031213242.2">#  每個零件圖影片
-
-1.https://youtu.be/xgYM__8kUpI
-3.https://youtu.be/gNmqjGbAn70
-4.https://youtu.be/6eByaG62f7Q
-6.https://youtu.be/JuvvhxtFOUI
-8.https://youtu.be/_O6a6oaFAJw
-9.https://youtu.be/ebxkzxgs3_8
-10.https://youtu.be/scgrvxGnqGE
-
-
-
-
-</t>
-<t tx="leo.20191031214207.1">&lt;section data-markdown&gt;
-    &lt;script type="text/template"&gt;
-@others
-    &lt;/script&gt;
-&lt;/section&gt;
-
-
-						
-</t>
-<t tx="leo.20191031214207.2">#  每個零件圖影片
-11.https://youtu.be/b07TfCOscfg
-12.https://youtu.be/LwCUEgcbBps
-13.https://youtu.be/jkpvg-6Rbag
-
-14.https://youtu.be/-AZChpDNk0U
-
-15.https://youtu.be/iUxtuX9dR1M
-16.https://youtu.be/GzioJn-QpB8
-17.https://youtu.be/hwl_d8r8Hjw
-18.https://youtu.be/AN-aUGVQRVg
-
-
+&lt;iframe height="500" src="./../solvespace/001.html" width="690"&gt;&lt;/iframe&gt;
 
 </t>
 <t tx="leo.20191106210709.1">&lt;section data-markdown&gt;
@@ -1041,14 +965,14 @@ pull requests反向:一樣是組員點選New pull request，不過要特別改�
 
 						
 </t>
-<t tx="leo.20191204175147.2">#  Week12
+<t tx="leo.20191204175147.2">##  [Week12](https://s40723210.github.io/cad2019/content/Week10-14.html)
 
 * 整理Nx教科書內容
-
+&lt;hr&gt;
 * Webots Tutorial-1 操作
-
+&lt;hr&gt;
 * V-rep bubbleRob Tutorial 操作
-
+&lt;hr&gt;
 </t>
 <t tx="leo.20191204181003.1">&lt;section data-markdown&gt;
     &lt;script type="text/template"&gt;
@@ -1073,8 +997,161 @@ pull requests反向:一樣是組員點選New pull request，不過要特別改�
 </t>
 <t tx="leo.20191205234553.2">### Webots 與 V-rep Tutorial
 
-&lt;font size="5.5"&gt;
+&lt;font size="6"&gt;
 使用心得:目前使用下來，我覺得webots比較好用，webots的場景逼真又接近於現實，而且也能模擬許多複雜的狀況，在設定上也提供了很多的範本，控制器程式就在旁邊也易於更改。相較之下v-rep的逼真度就比較弱，雖然比webots還易於編輯零件，也比較好在各個零件加入一些感測器或機械結構，可是要一個一個定義也是很麻煩的，模擬上不會說比webots還要差很多，可是v-rep的遠端控制，就贏了webots許多，v-rep能通過應用程序接口，也就是雲端控制系統，能廣泛的應用在許多開發上，解論我個人傾向於使用webots，還是越逼真越好，這樣才是開發者想要的。
 &lt;/font&gt;</t>
+<t tx="leo.20191227173531.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+</t>
+<t tx="leo.20191227173531.2">##  [Week9](https://s40723210.github.io/cad2019/content/Week6-9.html)
+
+* 期中報告
+&lt;hr&gt;
+&lt;font size="6"&gt;
+* 心得:
+從Week 2 - Week 9中我學到了很多的東西，這一學期使用的是亂數分組，所以組員有些都不太熟，一開始一樣都是創一個倉儲，然後維護他，將每周的內容和影片都上傳上去，Solvespace 是一個很小的繪圖軟體，可以隨身攜帶，所以非常的方便，只是功能不多而已，它跟我們之前所學的繪圖軟體不太一樣，所以我花了一點的時間去熟悉它，再來就是V-rep 這個軟體，我們教了一下，就換成Webots了，因為Webots是免費的軟體，而且又比V-rep還多功能，所以我很好奇學不學會。
+&lt;/font&gt;
+
+
+
+</t>
+<t tx="leo.20191227174813.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+</t>
+<t tx="leo.20191227174813.2">###  各個成品圖及影片
+
+&lt;iframe height="540" src="./../solvespace/solve666.html" width="730"&gt;&lt;/iframe&gt;
+
+</t>
+<t tx="leo.20191227175232.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+</t>
+<t tx="leo.20191227175232.2">##  期中報告影片
+
+&lt;iframe width="700" height="490" src="https://www.youtube.com/embed/dWtvxaCwQTg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;
+
+
+
+</t>
+<t tx="leo.20191227175615.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+</t>
+<t tx="leo.20191227175615.2">##  [Week13報告](https://s40723210.github.io/cad2019/content/Week10-14.html)
+
+&lt;iframe width="700" height="492" src="https://www.youtube.com/embed/qg7MNUqy0Og" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;</t>
+<t tx="leo.20191227175846.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+</t>
+<t tx="leo.20191227175846.2">##  [Week12](https://s40723210.github.io/cad2019/content/Week10-14.html)
+
+* Webots Tutorial 自主練習1~6
+
+
+</t>
+<t tx="leo.20191227180026.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+</t>
+<t tx="leo.20191227180026.2">##  Webots Tutorial
+
+&lt;iframe height="540" src="./../downloads/webots/Webots Tutorial.html" width="740"&gt;&lt;/iframe&gt;
+
+</t>
+<t tx="leo.20191227190829.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+</t>
+<t tx="leo.20191227190829.2">##  [Week15查驗](https://s40723210.github.io/cad2019/content/Week15-18.html)
+
+&lt;iframe width="700" height="492" src="https://www.youtube.com/embed/zStI_0WxzIM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;</t>
+<t tx="leo.20191227191040.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+</t>
+<t tx="leo.20191227191040.2">##  Webots導入wrl圖檔
+
+&lt;iframe width="700" height="492" src="https://www.youtube.com/embed/mGN6LdPV-lc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;</t>
+<t tx="leo.20191227191209.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+</t>
+<t tx="leo.20191227191209.2">##  [Week16](https://s40723210.github.io/cad2019/content/Week15-18.html)
+
+* 越野車零組件設計繪圖查驗
+&lt;hr&gt;
+&lt;font size="6"&gt;
+* 心得:
+這次是要使用solvespace來設計並繪製越野車零組件，我在設計方面想的比較久，尺寸以及形狀跟範例圖，是不太一樣的，但是在架構上基本是相同的，因為是使用solvespace來繪製的，所以我在繪製的時候，耗費了許多的時間，solvespace在繪製功能上有些許的不足，導致我無法使用鏡射，再組合零件上，能約束的條件也很少，畫完存成stl檔以及wrl檔，要轉到v-rep、webots，轉出來的都是一整個實體，所以到時候還要再思考，該如何再轉檔的時候，能直接轉成各個分開的零件。
+&lt;/font&gt;
+
+
+
+</t>
+<t tx="leo.20191227191310.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+</t>
+<t tx="leo.20191227191310.2">##  越野車零組件設計繪圖
+
+&lt;iframe width="700" height="490" src="https://www.youtube.com/embed/ZGVvMynspJI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;
+
+
+
+</t>
 </tnodes>
 </leo_file>
