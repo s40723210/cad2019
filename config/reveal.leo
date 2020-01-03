@@ -156,6 +156,18 @@
 <v t="leo.20191227191310.1"><vh>影片</vh>
 <v t="leo.20191227191310.2"><vh>封面投影片內容</vh></v>
 </v>
+<v t="leo.20200103221859.1"><vh>W17</vh>
+<v t="leo.20200103221859.2"><vh>封面投影片內容</vh></v>
+</v>
+<v t="leo.20200103224133.1"><vh>草圖</vh>
+<v t="leo.20200103224133.2"><vh>封面投影片內容</vh></v>
+</v>
+<v t="leo.20200103223819.1"><vh>阻尼</vh>
+<v t="leo.20200103223819.2"><vh>封面投影片內容</vh></v>
+</v>
+<v t="leo.20200103223821.1"><vh>車車</vh>
+<v t="leo.20200103223821.2"><vh>封面投影片內容</vh></v>
+</v>
 <v t="leo.20180902120523.11"><vh>快捷鍵</vh>
 <v t="leo.20180902120523.12"><vh>投影片快捷鍵</vh></v>
 </v>
@@ -1148,10 +1160,66 @@ pull requests反向:一樣是組員點選New pull request，不過要特別改�
 </t>
 <t tx="leo.20191227191310.2">##  越野車零組件設計繪圖
 
-&lt;iframe width="700" height="490" src="https://www.youtube.com/embed/ZGVvMynspJI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;
+&lt;iframe width="700" height="492" src="https://www.youtube.com/embed/ZGVvMynspJI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;
 
 
 
+</t>
+<t tx="leo.20200103221859.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+</t>
+<t tx="leo.20200103221859.2">##  [Week17](https://s40723210.github.io/cad2019/content/Week15-18.html)
+
+* 分工整理v-rep buildingAModelTutorial以及webots tutorial 2
+&lt;hr&gt;
+* 標示越野車組件草圖尺寸
+&lt;hr&gt;
+* 越野車組件設定機械阻尼
+&lt;hr&gt;
+* 自主練習V-rep導入和模擬越野車
+&lt;hr&gt;</t>
+<t tx="leo.20200103223819.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+</t>
+<t tx="leo.20200103223819.2">##  越野車組件設定機械阻尼
+
+&lt;iframe width="700" height="492" src="https://www.youtube.com/embed/2hmV_pxAXsY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;</t>
+<t tx="leo.20200103223821.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+</t>
+<t tx="leo.20200103223821.2">##  V-rep導入和模擬越野車
+
+&lt;iframe width="700" height="492" src="https://www.youtube.com/embed/As2GrZNQOe0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;</t>
+<t tx="leo.20200103224133.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+</t>
+<t tx="leo.20200103224133.2">###  越野車組件草圖尺寸
+
+&lt;a&gt;&lt;img src="https://i.imgur.com/qbPPnQ3.png" width="840" height="560"&gt;&lt;/a&gt;
 </t>
 </tnodes>
 </leo_file>
