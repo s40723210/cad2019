@@ -168,6 +168,9 @@
 <v t="leo.20200103223821.1"><vh>車車</vh>
 <v t="leo.20200103223821.2"><vh>封面投影片內容</vh></v>
 </v>
+<v t="leo.20200110100848.1"><vh>車車</vh>
+<v t="leo.20200110100848.2"><vh>封面投影片內容</vh></v>
+</v>
 <v t="leo.20180902120523.11"><vh>快捷鍵</vh>
 <v t="leo.20180902120523.12"><vh>投影片快捷鍵</vh></v>
 </v>
@@ -590,7 +593,7 @@ vertical: body pane on the botton</t>
 &lt;hr&gt;
 * Solvespace 繪圖驗證
 &lt;hr&gt;
-* 從老師提供的零件網頁，進行Solvespace 繪圖驗證。
+* 從老師提供零件網頁，進行Solvespace 繪圖驗證。
 &lt;hr&gt;</t>
 <t tx="leo.20191031192838.1">&lt;section data-markdown&gt;
     &lt;script type="text/template"&gt;
@@ -1221,5 +1224,17 @@ pull requests反向:一樣是組員點選New pull request，不過要特別改�
 
 &lt;a&gt;&lt;img src="https://i.imgur.com/qbPPnQ3.png" width="840" height="560"&gt;&lt;/a&gt;
 </t>
+<t tx="leo.20200110100848.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+</t>
+<t tx="leo.20200110100848.2">##  Webots導入和模擬越野車
+
+&lt;iframe width="700" height="492" src="https://www.youtube.com/embed/CJS8gXBPC3s" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;</t>
 </tnodes>
 </leo_file>

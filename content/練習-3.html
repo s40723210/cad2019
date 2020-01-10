@@ -167,54 +167,136 @@ img.add_border {
             </div>
           </div>  
         </header>
-    <div id="tipue_search_content">Week2-5 << <a href='Week2-5.html'>Previous</a> <a href='Week10-14.html'>Next</a> >> Week10-14<br /><h1>Week6-9</h1>
-<h4><span>參數化零組件繪製</span></h4>
-<p><span>1.開啟老師的雙輪車圖和Solvesoace。<br/><span><span><br/></span><span>2.先畫車身，用一個凹型然後長出。</span><br/><span><span><br/></span><span>3.在除掉一個方形，<span>用difference將該部位去除</span>。</span></span><br/><span><span><br/></span><span>4.畫一個放輪軸的洞，除料一直線。</span></span><br/><span><span><br/></span><span>5.畫後輪一個圓柱，在畫一個半圓旋轉長出。</span></span><br/><span><span><br/></span><span>6.這樣就完成了車身了，存檔起來，開新檔。</span></span><br/><span><span><span><br/></span></span><span><span>7.<span>C快捷鍵繪製一圓</span>輪子，圓形給厚度，再畫軸。</span></span></span><br/><span><span><span><br/></span></span><span><span>8.開剛剛的車身來組合，即可完成雙輪車。</span></span></span></span></span></p>
-<p><span><span><span><span><span>☆可參照我的<span> </span><a href="https://s40723210.github.io/cad2019/content/SolveSpace%E7%9A%84%E5%BF%AB%E6%8D%B7%E9%8D%B5.html">SolveSpace快捷鍵</a></span></span></span></span></span></p>
-<p><span style="color: #ff0000;">成品圖(可滑鼠拖移):</span></p>
-<p><iframe height="300" src="./../solvespace/newcar.html" width="500"></iframe></p>
-<p><span>我的操作影片(有字幕):<a href="https://youtu.be/c-6eKPufTlE">https://youtu.be/c-6eKPufTlE</a></span></p>
-<p><span><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/c-6eKPufTlE" width="560"></iframe></span></p>
-<hr/>
-<h4><span>網際 V-rep 模型控制</span></h4>
-<p><span>1. 先到Task1裡，下載V-rep 3.6.1 rev 4.7z和 web_vrep2.zip。<br/><span><span><br/></span><span>2.將兩個檔案都解壓縮在自己的隨身碟tmp裡面。</span></span><br/><span><span><br/></span><span>3.打開自己的start_mdecourse，輸入regedit開啟程式。</span></span><br/><span><span><br/></span><span>4.將HKEY_CLASSES_ROOT內的，.py和.py_auto_file刪除。</span></span><br/><span><span><br/></span><span>5.開啟web_vrep2的</span><span>app.py，點Tools的Go。</span></span><br/><span><span><br/></span><span>6.再點開剛剛載好的</span><span>V-REP3\V-REP_PRO_EDU &gt; vrep.exe 。</span></span><br/><span><span><br/></span><span>7.開啟後將</span><span>web_vrep2的</span><span>two_wheeler.ttt拖移進去。</span></span><br/><span><span><br/></span><span>8.到</span><span>http://127.0.0.1:5000/裡面，就可以操控了。</span></span></span></p>
-<p><span>我的操作影片(有字幕):<a href="https://youtu.be/2nrqVEW3qAc">https://youtu.be/2nrqVEW3qAc</a></span></p>
-<p><span><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/2nrqVEW3qAc" width="560"></iframe></span></p>
-<hr/>
-<h4><span>新增啟動與停止按鈕</span></h4>
-<p><span>1.進入2b Task 1的 <a href="https://github.com/mdecourse/cad2019/issues/14">#14</a> ，準備操作。<br/><span><span><br/></span><span>2.開啟start_mdecoursr，進入web_vrep2。</span></span><br/><span><span><br/></span><span>3.編輯templates裡面的controls.html。</span></span><br/><span><span><br/></span><span>4.加入start 和 stop 的botton，直接複製改。</span></span><br/><span><span><br/></span><span>5.編輯vrep_linefollower.py，if加入判斷式。</span></span><br/><span>if direction == 'start': </span><br/><span><span>vrep.simxStartSimulation(self.clientID, vrep.simx_opmode_oneshot)</span></span><br/><span>if direction == 'stop': </span><br/><span><span>vrep.simxStopSimulation(self.clientID, vrep.simx_opmode_oneshot)</span></span><br/><span><span>6.補上else: ，完成後儲存，記得語法要排好。</span></span><br/><span><span><br/></span></span><span></span><span><span>7.開啟v-rep程式，將</span></span><span>two_wheeler.ttt檔案拖入。</span><br/><span><br/></span><span></span><span>8.再開啟app.py 的go進入網址localhost:5000。</span><br/><span><br/></span><span></span><span>9.這樣子就可以進行start 以及 stop的操作了。</span></span></p>
-<p>我的教學影片:<a href="https://youtu.be/fsWnXIUaZN8">https://youtu.be/fsWnXIUaZN8</a></p>
-<p><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/fsWnXIUaZN8" width="560"></iframe></p>
-<hr/>
-<h4 class="post-title entry-title" itemprop="name">Solvespace 納入學號</h4>
-<p><span>1.先到自己tmp下的solvespace\build\src\CMakeFiles\solvespace.dir。</span><br/><span><br/></span><span></span><span>2.刪掉solvespace.cpp.obj檔案，開啟start_mdecourse。</span><br/><span><br/></span><span></span><span>3.再到solvespace\src找到solvespace.cpp用編輯器打開。</span><br/><span><br/></span><span></span><span>4.Ctrl+f 搜尋GPL，把Message下面的This is SolveSpace 。</span><br/><span><br/></span><span></span><span>5.改成This is SolveSpace is compiled by 40723210。</span><br/><span><br/></span><span></span><span>6.進入solvespace\build，輸入<span>mingw32-make，等待完成。</span></span><br/><span><br/></span><span></span><span>8.開啟solvespace.exe，點help &gt; about 就完成了驗證。</span><br/><span><br/></span><span></span><span>我的教學影片(有字幕):<a href="https://youtu.be/rd_2Q----oA">https://youtu.be/rd_2Q----oA</a></span></p>
-<p><span><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/rd_2Q----oA" width="560"></iframe></span></p>
-<hr/>
-<h4 class="post-title entry-title" itemprop="name">Solvespace 繪圖驗證</h4>
-<p><span style="color: #800080;"><strong>#可以使用滑鼠上下移動，尋找想看的教學影片，沒顯示出來就案F5(重新整理)。</strong></span></p>
-<p><iframe height="480" src="./../solvespace/solve666.html" width="800"></iframe></p>
-<hr/>
-<h4 class="title style-scope ytd-video-primary-info-renderer"><yt-formatted-string class="style-scope ytd-video-primary-info-renderer" force-default-style="">啟用 CMSiMDE 中的網誌系統</yt-formatted-string></h4>
-<p><span>1.先開啟start_mdecourse，輸入leo。</span><br/><span><br/></span><span></span><span>2.將config內的pelican.leo拖入leo。</span><br/><span><br/></span><span></span><span>3.到自己的網頁，開啟Home下的bolg。</span><br/><span><br/></span><span></span><span>4.複製網址，把SITEURL = 改成自己的網址。</span><br/><span><br/></span><span></span><span>5.對local-blog點右鍵，案goto script。</span><br/><span><br/></span><span></span><span>6.再到倉儲輸入.py的指令，就可以了。</span></p>
-<p>我的教學影片(有字幕):<a href="https://youtu.be/7OKU6LOja3Y">https://youtu.be/7OKU6LOja3Y</a></p>
-<p><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/7OKU6LOja3Y" width="560"></iframe></p>
-<hr/>
-<h4 class="title style-scope ytd-video-primary-info-renderer"><yt-formatted-string class="style-scope ytd-video-primary-info-renderer" force-default-style="">導入 Webots</yt-formatted-string></h4>
-<p><span>1.到tools下的webots，下載webots_2019b_rev1.7。</span><br/><span><br/></span><span></span><span>2.放到Y槽解壓縮，創建一個<span>start_webots</span><span>。</span></span><br/><span><br/></span><span></span><span>3.直接複製<span>start_mdecourse指令，加上老師給的指令。</span></span><br/><span><br/></span><span></span><span>4.有<span>執行路徑設定和</span><span>啟動指令，符號要打對。</span></span><br/><span><br/></span><span></span><span>5.</span><span>存檔後啟動，只有出現聲音erro就ok了。</span></p>
-<p><span>我的教學影片(有字幕):<a href="https://youtu.be/wiN1nghgnew">https://youtu.be/wiN1nghgnew</a><br/></span></p>
-<p><span><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/wiN1nghgnew" width="560"></iframe></span></p>
-<hr/>
-<h4 class="title style-scope ytd-video-primary-info-renderer"><yt-formatted-string class="style-scope ytd-video-primary-info-renderer" force-default-style="">以ssh 對 Github 連線</yt-formatted-string></h4>
-<p><span>1.先將Y:\portablegit\bin下的sh.exe建立起來。</span><br/><span><br/></span><span></span><span>2.輸入sh，輸入<span>ssh-keygen -t rsa -b 4096 -C "學號</span><span>"。</span></span><br/><span><span><br/></span></span><span></span><span><span>3.在Y:</span><span>\home_mdecourse裡創建一個.ssh。</span></span><br/><span><span><br/></span></span><span></span><span><span>4.輸入</span><span>Y:</span><span>\home_mdecourse</span><span>\.ssh/id_rsa。</span></span><br/><span><span><br/></span></span><span></span><span><span>5.按完Enter後，下載putty放在Y槽內。</span></span><br/><span><br/></span><span></span><span>6.編輯<span>start_mdecourse.bat，加入如下的指令。</span></span><br/><span><span>Set GIT_HOME=%Disk%:\portablegit\bin\</span></span><br/><span><span>Set GIT_SSH=%Disk%:\putty\plink.exe</span></span><br/><span>7.到自己倉儲的.git，url改成ssh形式。</span><br/><span><br/></span><span></span><span>8.開啟puttygen.exe，將鑰匙存成private key。</span><br/><span><br/></span><span></span><span>9.</span><span>開啟putty.exe，設定proxy和路徑，在案save。</span><br/><span><br/></span><span></span><span>10.再到github存入自己的key，就可以了。</span></p>
-<p><span>我的教學影片(有字幕):<a href="https://youtu.be/k-sOF6PQa1I">https://youtu.be/k-sOF6PQa1I</a></span></p>
-<p><span><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/k-sOF6PQa1I" width="560"></iframe></span></p>
-<hr/>
-<h4>期中報告</h4>
-<p>網誌連結:<a href="https://s40723210.github.io/cad2019/blog/2018-Fall-32-bit-Windows-w9.html">https://s40723210.github.io/cad2019/blog/2018-Fall-32-bit-Windows-w9.html</a></p>
-<p>心得:<span>從Week 2 - Week 9中我學到了很多的東西，這一學期使用的是亂數分組，所以組員有些都不太熟，一開始一樣都是創一個倉儲，然後維護他，將每周的內容和影片都上傳上去，Solvespace 是一個很小的繪圖軟體，可以隨身攜帶，所以非常的方便，只是功能不多而已，它跟我們之前所學的繪圖軟體不太一樣，所以我花了一點的時間去熟悉它，再來就是V-rep 這個軟體，我們教了一下，就換成Webots了，因為Webots是免費的軟體，而且又比V-rep還多功能，所以我很好奇學不學會。</span></p>
-<p>影片連結:<a href="https://youtu.be/dWtvxaCwQTg">https://youtu.be/dWtvxaCwQTg</a></p>
-<p><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/dWtvxaCwQTg" width="560"></iframe></p>
-<br />Week2-5 << <a href='Week2-5.html'>Previous</a> <a href='Week10-14.html'>Next</a> >> Week10-14</div>
+    <div id="tipue_search_content">練習-2 << <a href='練習-2.html'>Previous</a> <a href='練習-4.html'>Next</a> >> 練習-4<br /><h1>練習-3</h1>
+<p><span><strong>#判斷式if<br/></strong></span><span><strong></strong></span></p>
+<div>
+<div class="syntaxhighlighter py" id="highlighter_307567">
+<table border="0" cellpadding="0" cellspacing="0">
+<tbody>
+<tr>
+<td class="gutter">
+<div class="line number1 index0 alt2">1</div>
+<div class="line number2 index1 alt1">2</div>
+<div class="line number3 index2 alt2">3</div>
+<div class="line number4 index3 alt1">4</div>
+</td>
+<td class="code">
+<div class="container">
+<div class="line number1 index0 alt2"><code class="py keyword">if</code> <code class="py color1">True</code><code class="py plain">:</code></div>
+<div class="line number2 index1 alt1"><code class="py spaces">   </code><code class="py functions">print</code><code class="py plain">(</code><code class="py string">"True 執行"</code><code class="py plain">)</code></div>
+<div class="line number3 index2 alt2"><code class="py keyword">else</code><code class="py plain">:</code></div>
+<div class="line number4 index3 alt1"><code class="py spaces">   </code><code class="py functions">print</code><code class="py plain">(</code><code class="py string">"False 執行"</code><code class="py plain">)</code></div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p><span>True 執行</span></p>
+<div>
+<div class="syntaxhighlighter py" id="highlighter_108602">
+<table border="0" cellpadding="0" cellspacing="0">
+<tbody>
+<tr>
+<td class="gutter">
+<div class="line number1 index0 alt2">1</div>
+<div class="line number2 index1 alt1">2</div>
+<div class="line number3 index2 alt2">3</div>
+<div class="line number4 index3 alt1">4</div>
+</td>
+<td class="code">
+<div class="container">
+<div class="line number1 index0 alt2"><code class="py keyword">if</code> <code class="py color1">False</code><code class="py plain">:</code></div>
+<div class="line number2 index1 alt1"><code class="py spaces">   </code><code class="py functions">print</code><code class="py plain">(</code><code class="py string">"True 執行"</code><code class="py plain">)</code></div>
+<div class="line number3 index2 alt2"><code class="py keyword">else</code><code class="py plain">:</code></div>
+<div class="line number4 index3 alt1"><code class="py spaces">   </code><code class="py functions">print</code><code class="py plain">(</code><code class="py string">"False 執行"</code><code class="py plain">)</code></div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p><span>False 執行</span></p>
+<div>
+<div class="syntaxhighlighter py" id="highlighter_249425">
+<table border="0" cellpadding="0" cellspacing="0">
+<tbody>
+<tr>
+<td class="gutter">
+<div class="line number1 index0 alt2">1</div>
+<div class="line number2 index1 alt1">2</div>
+<div class="line number3 index2 alt2">3</div>
+<div class="line number4 index3 alt1">4</div>
+<div class="line number5 index4 alt2">5</div>
+<div class="line number6 index5 alt1">6</div>
+<div class="line number7 index6 alt2">7</div>
+<div class="line number8 index7 alt1">8</div>
+</td>
+<td class="code">
+<div class="container">
+<div class="line number1 index0 alt2"><code class="py plain">x</code><code class="py keyword">=</code><code class="py functions">input</code><code class="py plain">(</code><code class="py string">"請輸入數字︰"</code><code class="py plain">) </code><code class="py comments"># 取得字串形式的使用者輸入</code></div>
+<div class="line number2 index1 alt1"><code class="py plain">x</code><code class="py keyword">=</code><code class="py functions">int</code><code class="py plain">(x) </code><code class="py comments"># 將字串型態轉換成數字型態</code></div>
+<div class="line number3 index2 alt2"><code class="py keyword">if</code> <code class="py plain">x&gt;</code><code class="py value">200</code><code class="py plain">:</code></div>
+<div class="line number4 index3 alt1"><code class="py spaces">    </code><code class="py functions">print</code><code class="py plain">(</code><code class="py string">"大於 200"</code><code class="py plain">)</code></div>
+<div class="line number5 index4 alt2"><code class="py keyword">elif</code> <code class="py plain">x&gt;</code><code class="py value">100</code><code class="py plain">:</code></div>
+<div class="line number6 index5 alt1"><code class="py spaces">    </code><code class="py functions">print</code><code class="py plain">(</code><code class="py string">"大於 100，小於等於 200"</code><code class="py plain">)</code></div>
+<div class="line number7 index6 alt2"><code class="py keyword">else</code><code class="py plain">:</code></div>
+<div class="line number8 index7 alt1"><code class="py spaces">    </code><code class="py functions">print</code><code class="py plain">(</code><code class="py string">"小於等於 100"</code><code class="py plain">)</code></div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p>輸入42<br/>小於等於 100<br/>輸入150<br/>大於 100，小於等於 200</p>
+<p><strong><span>#四則運算</span></strong></p>
+<div>
+<div class="syntaxhighlighter py" id="highlighter_805750">
+<table border="0" cellpadding="0" cellspacing="0">
+<tbody>
+<tr>
+<td class="gutter">
+<div class="line number1 index0 alt2">1</div>
+<div class="line number2 index1 alt1">2</div>
+<div class="line number3 index2 alt2">3</div>
+<div class="line number4 index3 alt1">4</div>
+<div class="line number5 index4 alt2">5</div>
+<div class="line number6 index5 alt1">6</div>
+<div class="line number7 index6 alt2">7</div>
+<div class="line number8 index7 alt1">8</div>
+<div class="line number9 index8 alt2">9</div>
+<div class="line number10 index9 alt1">10</div>
+<div class="line number11 index10 alt2">11</div>
+<div class="line number12 index11 alt1">12</div>
+<div class="line number13 index12 alt2">13</div>
+</td>
+<td class="code">
+<div class="container">
+<div class="line number1 index0 alt2"><code class="py plain">n1</code><code class="py keyword">=</code><code class="py functions">int</code><code class="py plain">(</code><code class="py functions">input</code><code class="py plain">(</code><code class="py string">"請輸入數字一︰"</code><code class="py plain">))</code></div>
+<div class="line number2 index1 alt1"><code class="py plain">op</code><code class="py keyword">=</code><code class="py functions">input</code><code class="py plain">(</code><code class="py string">"請輸入運算︰+, -, *, /:"</code><code class="py plain">)</code></div>
+<div class="line number3 index2 alt2"><code class="py plain">n2</code><code class="py keyword">=</code><code class="py functions">int</code><code class="py plain">(</code><code class="py functions">input</code><code class="py plain">(</code><code class="py string">"請輸入數字二︰"</code><code class="py plain">))</code></div>
+<div class="line number4 index3 alt1"><code class="py keyword">if</code> <code class="py plain">op</code><code class="py keyword">=</code><code class="py keyword">=</code><code class="py string">"+"</code><code class="py plain">:</code></div>
+<div class="line number5 index4 alt2"><code class="py spaces">    </code><code class="py functions">print</code><code class="py plain">(n1</code><code class="py keyword">+</code><code class="py plain">n2)</code></div>
+<div class="line number6 index5 alt1"><code class="py keyword">elif</code> <code class="py plain">op</code><code class="py keyword">=</code><code class="py keyword">=</code><code class="py string">"-"</code><code class="py plain">:</code></div>
+<div class="line number7 index6 alt2"><code class="py spaces">    </code><code class="py functions">print</code><code class="py plain">(n1</code><code class="py keyword">-</code><code class="py plain">n2)</code></div>
+<div class="line number8 index7 alt1"><code class="py keyword">elif</code> <code class="py plain">op</code><code class="py keyword">=</code><code class="py keyword">=</code><code class="py string">"*"</code><code class="py plain">:</code></div>
+<div class="line number9 index8 alt2"><code class="py spaces">    </code><code class="py functions">print</code><code class="py plain">(n1</code><code class="py keyword">*</code><code class="py plain">n2)</code></div>
+<div class="line number10 index9 alt1"><code class="py keyword">elif</code> <code class="py plain">op</code><code class="py keyword">=</code><code class="py keyword">=</code><code class="py string">"/"</code><code class="py plain">:</code></div>
+<div class="line number11 index10 alt2"><code class="py spaces">    </code><code class="py functions">print</code><code class="py plain">(n1</code><code class="py keyword">/</code><code class="py plain">n2)</code></div>
+<div class="line number12 index11 alt1"><code class="py keyword">else</code><code class="py plain">:</code></div>
+<div class="line number13 index12 alt2"><code class="py spaces">    </code><code class="py functions">print</code><code class="py plain">(</code><code class="py string">"不支援的運算"</code><code class="py plain">)</code></div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p><span>輸入84<br/>輸入+<br/>輸入55<br/>139</span></p>
+<br />練習-2 << <a href='練習-2.html'>Previous</a> <a href='練習-4.html'>Next</a> >> 練習-4</div>
         
     <!-- footer -->
       <div class="container">
