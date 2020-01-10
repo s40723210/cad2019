@@ -1,0 +1,153 @@
+#VRML_SIM R2019b utf8
+WorldInfo {
+  contactProperties [
+    ContactProperties {
+      material2 "dumbbell"
+      coulombFriction [
+        0
+      ]
+    }
+  ]
+}
+Viewpoint {
+  orientation -0.2819337246563095 0.9088188510537776 0.3075088142975932 1.7322619020131937
+  position 1.8985782942175546 1.415699946625584 -0.18299154278157972
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+Floor {
+  size 1 1
+}
+WoodenBox {
+  translation -0.223826 0.05 0.283385
+  size 0.1 0.1 0.1
+}
+WoodenBox {
+  translation 0.317385 0.05 0.308205
+  name "wooden box(1)"
+  size 0.1 0.1 0.1
+}
+WoodenBox {
+  translation -0.222821 0.05 -0.202644
+  name "wooden box(2)"
+  size 0.1 0.1 0.1
+}
+E-puck {
+  translation 0.0111671 0 -0.12124
+  controller "e-puck_go_forward"
+}
+DEF ball Solid {
+  translation 0 0.2 -0.2
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColorMap ImageTexture {
+          url [
+            "textures/red_brick_wall.jpg"
+            ""
+          ]
+        }
+        roughness 1
+        metalness 0
+      }
+      geometry DEF BALL_GEOMETRY Sphere {
+        radius 0.05
+        subdivision 2
+      }
+    }
+  ]
+  boundingObject USE BALL_GEOMETRY
+  physics Physics {
+  }
+}
+DEF wall_1 Solid {
+  translation 0 0.05 0.5
+  children [
+    DEF wall_1 Shape {
+      appearance PBRAppearance {
+        baseColor 0 0 1
+        roughness 0.5
+        metalness 0
+      }
+      geometry DEF wall Box {
+        size 1 0.1 0.02
+      }
+    }
+  ]
+  name "solid(1)"
+  boundingObject USE wall
+}
+DEF wall_2 Solid {
+  translation 0 0.05 -0.5
+  children [
+    USE wall_1
+  ]
+  name "solid(2)"
+  boundingObject USE wall
+}
+DEF wall_3 Solid {
+  translation -0.5 0.05 0
+  rotation 0 1 0 1.5708
+  children [
+    USE wall_1
+  ]
+  name "solid(3)"
+  boundingObject USE wall
+}
+DEF wall_4 Solid {
+  translation 0.5 0.05 0
+  rotation 0 1 0 1.5708
+  children [
+    USE wall_1
+  ]
+  name "solid(4)"
+  boundingObject USE wall
+}
+Solid {
+  translation 0 0.05 0
+  rotation 0 0 1 1.5708
+  children [
+    DEF g0 Group {
+      children [
+        Transform {
+          translation 0 0.05 0
+          children [
+            Shape {
+              geometry Sphere {
+                radius 0.03
+              }
+            }
+          ]
+        }
+        Shape {
+          geometry Cylinder {
+            height 0.1
+            radius 0.01
+          }
+        }
+        Transform {
+          translation 0 -0.05 0
+          children [
+            Shape {
+              geometry Sphere {
+                radius 0.03
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+  name "solid(5)"
+  contactMaterial "dumbbell"
+  boundingObject USE g0
+  physics Physics {
+    density -1
+    mass 2
+    centerOfMass [
+      0 0.01 0
+    ]
+  }
+}
